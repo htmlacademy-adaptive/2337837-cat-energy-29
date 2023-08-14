@@ -1,1 +1,13 @@
 // Начните писать стили здесь
+@use "./blocks/page-body.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-container.scss";
+@use "./blocks/hero.scss";
+@use "./blocks/programm.scss";
+@use "./blocks/action.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/catalog-container.scss";
+@use "./blocks/catalog-main-products.scss";
+@use "./blocks/catalog-add-products.scss";
+@use "./blocks/form-container.scss";

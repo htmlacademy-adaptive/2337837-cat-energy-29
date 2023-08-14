@@ -1,0 +1,36 @@
+.action {
+  margin: 20px 20px 53px;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.action__container {
+  margin: 0;
+  padding: 0;
+}
+
+.action__list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.action__title {
+  margin: 0;
+  padding: 0 0 42px 0;
+  color: #000000;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.action__description {
+  margin: 0;
+  padding: 0 0 26px 80px;
+  color: #444444;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
