@@ -6,7 +6,7 @@
 .catalog-add-products__title {
   margin: 0;
   padding: 25px 0 36px;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -15,10 +15,9 @@
   border-bottom: 1px solid #cdcdcd;
 }
 
-
 .catalog-add-products__card {
   margin: 0;
-  padding: 19px 0 25px;
+  padding: 10px 0 25px;
   width: 280px;
   border-bottom: 1px solid #cdcdcd;
 }
@@ -34,108 +33,15 @@
   padding: 0;
 }
 
-.add-product-name {
-  margin: 0;
-  padding: 0;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-
-.add-product-structure {
-  margin: 0;
-  padding: 0;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-}
-
-.add-product-description {
-  margin: 0;
-  padding: 13px 0 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.add-structure__item {
-  margin: 0;
-  padding: 0;
-  height: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.add-product-parametr {
-  margin: 0;
-  padding: 0;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-}
-
-.add-product-value {
-  margin: 0;
-  padding: 0;
-}
-
-.button {
-  margin: 0;
-  padding: 10px 0px;
-  height: 40px;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  display: block;
-  align-items: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #68B738;
-  border: none;
-  cursor: pointer;
-}
-
 .catalog-add-products__bonus {
   margin: 0;
   padding: 0;
   text-align: center;
   color: #ffffff;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),url("../img/catalog-background-1.png");
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-1.png");
   background-repeat: no-repeat;
   background-color: #ffffff;
   min-width: 280px;
   min-height: 290px;
   border: none;
-}
-
-.bonus-card {
-  margin: 0;
-  padding: 0;
-}
-
-.bonus-image {
-  margin: 0;
-  padding: 48px 0;
-  text-align: center;
-}
-
-.bonus-description {
-  margin: 0;
-  padding: 0;
-  width: 161px;
-  color: #ffffff;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
 }

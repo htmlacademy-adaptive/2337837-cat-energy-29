@@ -3,47 +3,12 @@
   padding: 0;
   background-color: #ffffff;
   text-align: center;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
 }
 
 .main-header-position {
   min-height: 65px;
-  margin: 0 ;
-  padding: 0 20px;
-  border-top: 1px solid #E6E6E6;
-}
-
-.main-nav__wrapper {
-  display: block;
-}
-
-.main-nav__toggle {
-  padding: 0;
-  background-image: url("../img/nav-toggle-open.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 24px;
-  height: 24px;
-  border: none;
-}
-
-.site-list {
   margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  font-size: 20px;
-  line-height: 20px;
-}
-
-.site-list__item {
-  padding: 22px 0 24px 0;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.site-list__item a {
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
+  padding: 0 20px;
+  border-top: 1px solid #e6e6e6;
 }

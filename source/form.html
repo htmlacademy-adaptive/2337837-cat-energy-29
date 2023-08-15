@@ -51,101 +51,101 @@
     <p class="form-container__description">
       Заполните анкету, и мы подберем<br>программу питания для вашего кота
     </p>
-    <div class="form-container__wrapper">
-      <form class="form-parametr" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form-parametr-box">
-          <div class="form-parametr-question">
-            <label class="form-parametr__field">
+    <div class="form-container__wrapper form-parametrs">
+      <form class="form-parametrs__container" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form-parametrs__box-info box-info">
+          <div class="box-info__question">
+            <label class="box-info__field">
               Имя:*
-              <input class="form-parametr__enter" type="text" name="nickname" placeholder="Укажите имя питомца" value="Барсик" required>
+              <input class="box-info__enter" type="text" name="nickname" placeholder="Укажите имя питомца" value="Барсик" required>
             </label>
           </div>
-          <div class="form-parametr-question">
-            <label class="form-parametr__field">
+          <div class="box-info__question">
+            <label class="box-info__field">
               Вес&nbsp;(Кг):*
-                <input class="form-parametr__enter" type="text" name="weight" placeholder="Укажите полный вес" value="7" required>
+                <input class="box-info__enter" type="text" name="weight" placeholder="Укажите полный вес" value="7" required>
             </label>
           </div>
-          <div class="form-parametr-question">
-            <label class="form-parametr__field">
+          <div class="box-info__question">
+            <label class="box-info__field">
               Возраст&nbsp;(Лет):*
-                <input class="form-parametr__enter" type="text" name="age" id="age" placeholder="Укажите полный вес" value="7" required>
+                <input class="box-info__enter" type="text" name="age" id="age" placeholder="Укажите полный вес" value="7" required>
             </label>
           </div>
         </div>
-        <div class="program-choice">
+        <div class="form-parametrs__box-program box-program">
           <p class="visually-hidden">
             Выберите тип программы.
           </p>
-          <div class="form-parametr__effect">
+          <div class="box-program__effect">
             <input class="custom-radio" type="radio" id="slim" name="slim" checked>
             <label for="slim">
               Похудение
             </label>
           </div>
-          <div class="form-parametr__effect">
+          <div class="box-program__effect">
             <input class="custom-radio" type="radio" id="fat" name="fat">
             <label for="fat">
               Набор массы
             </label>
           </div>
-          <div class="form-parametr__effect">
+          <div class="box-program__effect">
             <input class="custom-radio" type="radio" id="advice" name="advice">
             <label for="advice">
               Не знаю (нужен ваш совет)
             </label>
           </div>
         </div>
-        <h2 class="form-parametr__contact-title">
+        <h2 class="form-parametrs__contact-title">
           Контактные данные (владельца кота)
         </h2>
-        <div class="form-parametr__contact-address">
-          <label class="form-parametr__contact-field">
+        <div class="form-parametrs__contact-address box-contact">
+          <label class="box-contact__field">
             E-&nbsp;mail:*
-            <input class="form-parametr__contact-enter" type="text" name="e-mail" placeholder="Укажите вашу электронную почту" value="kuklachev@gmail.com" required>
+            <input class="box-contact__enter" type="text" name="e-mail" placeholder="Укажите вашу электронную почту" value="kuklachev@gmail.com" required>
           </label>
-          <label class="form-parametr__contact-field">
+          <label class="box-contact__field">
             Телефон:*
-            <input class="form-parametr__contact-enter" type="text" name="phone" placeholder="Укажите ваш телефонный номер" value="8 (960) 900-60-90" required>
+            <input class="box-contact__enter" type="text" name="phone" placeholder="Укажите ваш телефонный номер" value="8 (960) 900-60-90" required>
           </label>
         </div>
-        <h2 class="form-parametr__comment">
+        <h2 class="form-parametrs__comment">
           Комментарий
         </h2>
-        <textarea class="parametr-comment" name="comment-input" id="comment-field" rows="10">
+        <textarea class="form-parametrs__comment-info" name="comment-input" id="comment-field" rows="10">
           Расскажите обо всех повадках кота
         </textarea>
-        <h2 class="form-parametr-addition">
+        <h2 class="form-parametrs__addition">
           Дополнительно
         </h2>
-        <div class="form-parametr__add-box">
-          <div class="form-parametr__add">
+        <div class="form-parametrs__addition-info box-addition">
+          <div class="box-addition__add">
             <input class="custom-radio" type="checkbox" id="sugar" name="sugar" checked>
             <label for="sugar">
               Сахарозаменитель
             </label>
           </div>
-          <div class="form-parametr__add">
+          <div class="box-addition__add">
             <input class="custom-radio" type="checkbox" id="water" name="water">
             <label for="water">
               Питьевая вода
             </label>
           </div>
-          <div class="form-parametr__add">
+          <div class="box-addition__add">
             <input class="custom-radio" type="checkbox" id="milk" name="milk">
             <label for="milk">
               Молоко
             </label>
           </div>
-          <div class="form-parametr__add">
+          <div class="box-addition__add">
             <input class="custom-radio" type="checkbox" id="vitamin" name="vitamin">
             <label for="vitamin">
               Витамины
             </label>
           </div>
         </div>
-        <input class="form-parametr__subscribe button" type="submit" value="Отправить заявку">
-        <p class="form-parametr__attantion">
+        <input class="form-parametrs__subscribe button" type="submit" value="Отправить заявку">
+        <p class="form-parametrs__attantion">
           * — Обязательные поля
         </p>
       </form>
@@ -171,7 +171,7 @@
         Мы в социальных сетях.
       </h2>
       <div class="main-footer__social-box">
-        <a class="main-footer__social-box__link">
+        <a class="main-footer__social-box-link">
           <img class="main-footer__logo-img" src="./img/logo-title.svg" width="128" height="24" alt="Сайт о правильном питании для котов.">
         </a>
         <ul class="main-footer__list">
@@ -207,7 +207,7 @@
           </li>
         </ul>
         <div class="main-footer__copyright">
-          <a class="main-footer__copyright__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="main-footer__copyright-link-academy" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>
           <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
@@ -216,9 +216,9 @@
               <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
               </g>
               <defs>
-              <clipPath id="clip0_92732_69">
+              <clippath id="clip0_92732_69">
               <rect width="27" height="34" fill="white"/>
-              </clipPath>
+              </clippath>
               </defs>
               </svg>
             <span class="visually-hidden">

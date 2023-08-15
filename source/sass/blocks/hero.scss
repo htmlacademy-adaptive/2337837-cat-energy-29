@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
 }
 
@@ -42,7 +42,7 @@
 .hero__button {
   display: block;
   padding: 8px 44px;
-  background-color: #68B738;
+  background-color: #68b738;
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -51,7 +51,7 @@
 .link-container a {
   color: #ffffff;
   font-size: 14px;
-  line-height: 18px; /* 128.571% */
+  line-height: 18px;
   text-transform: uppercase;
 }
 

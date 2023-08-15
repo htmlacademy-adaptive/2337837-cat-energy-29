@@ -9,7 +9,7 @@
   margin: 0;
   padding: 27px 0 37px;
   color: #000000;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -20,7 +20,7 @@
   margin: 0;
   padding: 0 0 39px;
   color: #000000;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -28,189 +28,7 @@
   text-transform: uppercase;
 }
 
-.form-container__wrapper {
+.form-container__box {
   margin: 0;
   padding: 0;
-}
-
-.form-parametr {
-  margin: 0;
-  padding: 0;
-}
-
-.form-parametr-box {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.form-parametr-question {
-  margin: 0;
-  padding: 0;
-}
-
-.form-parametr__field {
-  color: #444444;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  display: flex;
-  gap: 13px;
-  align-items: center;
-}
-
-.form-parametr__enter {
-  padding: 14px 0 13px 15px;
-  color: #444444;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.program-choice {
-  margin: 0;
-  padding: 46px 0 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 13px;
-}
-
-.form-parametr__effect {
-  color: #444444;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.form-parametr__contact-title {
-  margin: 0;
-  padding: 45px 0 35px;
-  color: #000000;
-  font-family: Oswald;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.form-parametr__contact-address {
-  margin: 0;
-  padding: 45px 0 35px;
-  color: #000000;
-  font-family: Oswald;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.form-parametr__contact-field {
-  color: #444444;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  display: flex;
-  gap: 13px;
-  align-items: center;
-}
-
-.form-parametr__contact-enter {
-  padding: 14px 0 13px 15px;
-  color: #444444;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.form-parametr__comment {
-  margin: 0;
-  padding: 24px 0 38px;
-  color: #000000;
-  font-family: Oswald;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.parametr-comment {
-  margin: 0;
-  padding: 14px 0 0 0;
-  width: 280px;
-  color: #444444;
-  font-family: Oswald;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.form-parametr-addition {
-  margin: 0;
-  padding: 23px 0 36px;
-  color: #000000;
-  font-family: Oswald;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.form-parametr__add-box {
-  margin: 0;
-  padding: 0 0 34px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-}
-
-.form-parametr__add {
-  color: #444444;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.form-parametr__subscribe {
-  width: 100%;
-}
-
-.form-parametr__attantion {
-  margin: 0;
-  padding: 21px 0 12px;
-  color: #000000;
-  text-align: center;
-  font-family: Lato;
-  font-style: normal;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
 }

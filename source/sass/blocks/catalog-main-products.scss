@@ -6,7 +6,7 @@
 .catalog-main-products__title {
   margin: 0;
   padding: 27px 0;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -15,7 +15,7 @@
 
 .catalog-main-products__card {
   margin: 0;
-  padding: 19px 0 25px;
+  padding: 10px 0 25px;
   width: 280px;
   display: flex;
   flex-direction: column;
@@ -43,121 +43,4 @@
   margin: 0;
   padding: 0;
   width: 140px;
-}
-
-.product-img {
-  margin: 0;
-  padding: 14px 36px 12px;
-  display: block;
-}
-
-.product-name {
-  margin: 0;
-  padding: 0;
-  width: 76px;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-.product-name-more {
-  margin: 0;
-  padding: 23px 0 8px;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.product-structure {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-}
-.product-structure-more {
-  margin: 0;
-  padding: 0 0 21px;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.product-description {
-  margin: 0;
-  padding: 0;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.structure__item {
-  margin: 0;
-  padding: 0;
-  width: 140px;
-  height: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.product-parametr {
-  margin: 0;
-  padding: 0;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.product-value {
-  margin: 0;
-  padding: 0;
-}
-
-.button {
-  margin: 0;
-  padding: 10px 0px;
-  height: 40px;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  display: block;
-  align-items: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #68B738;
-  border: none;
-}
-
-.button-more {
-  margin: 0;
-  padding: 10px 0px;
-  height: 40px;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  display: block;
-  align-items: center;
-  text-transform: uppercase;
-  color: #444444;
-  background-color: #f2f2f2;
-  border: none;
-  cursor: pointer;
 }
