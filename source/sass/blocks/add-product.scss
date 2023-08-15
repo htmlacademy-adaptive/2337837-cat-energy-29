@@ -1,0 +1,47 @@
+.add-product {
+  margin: 0;
+  padding: 0;
+}
+
+.add-product__name {
+  margin: 0;
+  padding: 9px 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.add-product__structure {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.add-product__description {
+  margin: 0;
+  padding: 13px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-product__parametr {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.add-product__value {
+  margin: 0;
+  padding: 0;
+}

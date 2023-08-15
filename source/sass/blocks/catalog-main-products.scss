@@ -1,0 +1,46 @@
+.catalog-main-products {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-main-products__title {
+  margin: 0;
+  padding: 27px 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog-main-products__card {
+  margin: 0;
+  padding: 10px 0 25px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 13px;
+}
+
+.catalog-main-products__list {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-main-products__list-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.catalog-main-products__item {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+}
