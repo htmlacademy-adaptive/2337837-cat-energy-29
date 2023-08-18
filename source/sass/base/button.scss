@@ -2,7 +2,6 @@
 .button {
   margin: 0;
   padding: 0;
-  height: 40px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -11,13 +10,14 @@
   display: block;
   align-items: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: #ffffff;
   background-color: #68b738;
   border: none;
   cursor: pointer;
 }
 
-.button--more {
+.button--none-color {
   color: #444444;
   background-color: #f2f2f2;
   border: none;

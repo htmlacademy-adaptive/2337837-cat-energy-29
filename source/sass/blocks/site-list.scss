@@ -6,15 +6,36 @@
   line-height: 20px;
 }
 
+@media (min-width: 760px) and (max-width: 1440px) {
+  .site-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 33px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
 .site-list__item {
   padding: 22px 0 24px 0;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  border-top: 1px solid #e6e6e6;
 }
 
 .site-list__item a {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: 760px) and (max-width: 1440px) {
+  .site-list__item {
+    padding: 22px 0 24px 0;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: none;
+  }
 }

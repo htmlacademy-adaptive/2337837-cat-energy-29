@@ -5,7 +5,7 @@
 
 .catalog-main-products__title {
   margin: 0;
-  padding: 27px 0;
+  padding: 27px 20px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -15,12 +15,19 @@
 
 .catalog-main-products__card {
   margin: 0;
-  padding: 10px 0 25px;
+  padding: 10px 20px 25px;
   width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 13px;
+  border: 1px solid #ebebeb;
+}
+
+.catalog-main-products__card-button {
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
 }
 
 .catalog-main-products__list {

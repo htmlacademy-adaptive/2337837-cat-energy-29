@@ -5,7 +5,7 @@
 
 .catalog-add-products__title {
   margin: 0;
-  padding: 25px 0 36px;
+  padding: 25px 20px 36px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -17,7 +17,14 @@
 
 .catalog-add-products__card {
   margin: 0;
-  padding: 10px 0 25px;
+  padding: 10px 20px 25px;
+  width: 280px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.catalog-add-products__card-button {
+  margin: 0;
+  padding: 10px 0;
   width: 280px;
   border-bottom: 1px solid #cdcdcd;
 }
@@ -35,7 +42,7 @@
 
 .catalog-add-products__bonus {
   margin: 0;
-  padding: 0;
+  padding: 10px 20px 25px;
   text-align: center;
   color: #ffffff;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-1.png");

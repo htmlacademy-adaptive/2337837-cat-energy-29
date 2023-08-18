@@ -4,9 +4,15 @@ html {
 
 .page-body {
   margin: 0 auto;
-  width: 320px;
+  max-width: 320px;
   background-color: #e6e6e6;
   color: #000000;
+}
+
+@media (min-width: 760px) and (max-width: 1440px) {
+  .page-body {
+    max-width: 760px;
+  }
 }
 
 .page-body li {
