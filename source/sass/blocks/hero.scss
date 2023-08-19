@@ -63,7 +63,7 @@
   margin: -135px 20px 3px 20px;
 }
 
-@media (min-width: 760px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .hero {
     position: relative;
     margin: 0;
@@ -120,3 +120,62 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .hero {
+    position: relative;
+    margin: 0;
+  }
+
+  .hero-welcome {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    color: #000000;
+    background: none;
+    background-repeat: no-repeat;
+    min-width: 0;
+    min-height: 0;
+    border: none;
+  }
+
+  .hero__title {
+    margin: 0;
+    padding: 0 0 40px 80px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    background: none;
+    width: 414px;
+  }
+
+  .hero__slogan {
+    margin: 0;
+    padding-left: 80px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .hero__image {
+    margin: 0;
+    padding: 0;
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    top: -81px;
+    right: 221px;
+  }
+
+  .link-container a {
+    position: absolute;
+    top: 232px;
+    left: 80px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding: 14px 26px;
+    text-transform: uppercase;
+  }
+}

@@ -13,8 +13,6 @@
 }
 
 .main-footer__wrapper--second {
-  margin: 0 -20px;
-  padding: 40px 20px;
   background-color: #f2f2f2;
 }
 
@@ -53,10 +51,22 @@
   line-height: 20px;
 }
 
-.main-footer__map-image {
+.main-footer__map {
   margin: 0;
   padding: 0;
+  background-image: url("/img/map-mobile.png");
   background-color: #f2f2f2;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  width: 320px;
+  height: 362px;
+}
+
+.main-footer__map-image {
+  margin: 0;
+  padding-top: 139px;
+  padding-left: 134px;
   text-align: center;
 }
 
@@ -113,7 +123,7 @@
   padding: 0;
 }
 
-@media (min-width: 760px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .main-footer__wrapper {
     margin: 0;
     padding: 61px 70px;
@@ -142,8 +152,104 @@
     line-height: 20px;
   }
 
+  .main-footer__map {
+    margin: 0;
+    padding: 0;
+    background-image: url("/img/map-tablet.png");
+    background-color: #f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    width: 768px;
+    height: 400px;
+  }
+
   .main-footer__map-image {
+    margin: 0;
+    padding-top: 146px;
+    padding-left: 333px;
     text-align: center;
+    width: 113px;
+    height: 106px;
+  }
+
+  .main-footer__social-box {
+    margin: 0;
+    padding: 55px 30px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .main-footer__social-box-link {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-footer__copyright {
+    margin: 0;
+    padding: 0;
+    gap: 23px;
+  }
+
+  .main-footer__list {
+    padding: 0;
+    align-items: center;
+    border: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-footer__wrapper {
+    margin: 0;
+    padding: 61px 70px;
+  }
+
+  .main-footer__title-box {
+    margin: 0;
+    padding: 0;
+    width: 163px;
+  }
+
+  .main-footer__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .main-footer__description-box {
+    margin: 0;
+    padding: 0;
+    width: 157px;
+    text-align: right;
+  }
+
+  .main-footer__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .main-footer__map {
+    margin: 0;
+    padding: 0;
+    background-image: url("/img/map-desktop.png");
+    background-color: #f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    width: 1440px;
+    height: 400px;
+  }
+
+  .main-footer__map-image {
+    margin: 0;
+    padding-top: 131px;
+    padding-left: 908px;
+    text-align: center;
+    width: 113px;
+    height: 106px;
   }
 
   .main-footer__social-box {

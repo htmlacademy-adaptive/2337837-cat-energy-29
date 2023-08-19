@@ -4,17 +4,24 @@ html {
 
 .page-body {
   margin: 0 auto;
-  max-width: 320px;
+  min-width: 280px;
+  width: 320px;
   background-color: #e6e6e6;
   color: #000000;
 }
 
-@media (min-width: 760px) and (max-width: 1440px) {
+.page-body li {
+  list-style: none;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
   .page-body {
-    max-width: 760px;
+    width: 768px;
   }
 }
 
-.page-body li {
-  list-style: none;
+@media (min-width: 1440px) {
+  .page-body {
+    width: 1440px;
+  }
 }
