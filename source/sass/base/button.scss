@@ -7,8 +7,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
   align-items: center;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -17,9 +20,7 @@
   cursor: pointer;
 }
 
-.button--none-color {
+.button--second {
   color: #444444;
   background-color: #f2f2f2;
-  border: none;
-  cursor: pointer;
 }

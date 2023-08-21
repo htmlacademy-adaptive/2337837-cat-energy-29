@@ -54,7 +54,15 @@
     border-top: none;
   }
 
+  .site-list__item--without-background {
+    color: #000000;
+  }
+
   .site-list__item a {
     color: #ffffff;
+  }
+
+  .site-list__item--without-background a {
+    color: #000000;
   }
 }

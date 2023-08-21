@@ -4,6 +4,11 @@
   background-color: #ffffff;
 }
 
+.main-footer__contacts {
+  margin: 0;
+  padding: 0;
+}
+
 .main-footer__wrapper {
   margin: 0;
   padding: 26px 20px;
@@ -203,9 +208,19 @@
 }
 
 @media (min-width: 1440px) {
+  .main-footer__contacts {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
   .main-footer__wrapper {
     margin: 0;
     padding: 61px 70px;
+    width: 426px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
   }
 
   .main-footer__title-box {
