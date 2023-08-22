@@ -10,6 +10,10 @@
 
 .main-nav__toggle {
   padding: 0;
+  display: block;
+  position: absolute;
+  top: 23px;
+  right: 21px;
   background-image: url("../img/nav-toggle-close.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -17,9 +21,22 @@
   width: 24px;
   height: 24px;
   border: none;
+}
+
+.main-nav__toggle--view-1 {
+  margin: 0;
+  padding: 0;
+  display: none;
   position: absolute;
-  top: 23px;
-  right: 21px;
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  min-width: 720px;
+  min-height: 694px;
+  border: none;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
@@ -42,31 +59,11 @@
     padding: 0;
   }
 
-  .main-nav__toggle {
-    margin: 0;
-    padding: 0;
-    display: block;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop-1.png");
-    background-repeat: no-repeat;
-    min-width: 720px;
-    min-height: 694px;
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 0;
+  .main-nav__toggle{
+    display: none;
   }
 
-  .main-nav__toggle--without-background {
-    margin: 0;
-    padding: 0;
-    display: none;
-    background: none;
-    background-repeat: no-repeat;
-    min-width: 720px;
-    min-height: 694px;
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 0;
+  .main-nav__toggle--view-1 {
+    display: block;
   }
 }
