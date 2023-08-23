@@ -54,7 +54,6 @@
   .bonus-card__image {
     margin: 0;
     width: 80px;
-    height: ;
   }
 
   .bonus-card__box {
@@ -72,4 +71,18 @@
     line-height: 20px;
     text-align: start;
   }
+}
+@media (min-width: 1440px) {
+  .bonus-card {
+    margin: 0;
+    width: 245px;
+    height: 288px;
+  }
+
+  .bonus-card__image {
+    margin: 0;
+    padding: 56px 83px 46px;
+    text-align: center;
+  }
+
 }

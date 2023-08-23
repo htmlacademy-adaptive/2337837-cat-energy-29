@@ -111,3 +111,33 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: 1440px) {
+  .product-name {
+    width: 140px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .product-structure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 169px;
+    font-size: 16px;
+    line-height: 20px;
+    gap: 12px;
+  }
+
+  .product-parametr {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .product-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
