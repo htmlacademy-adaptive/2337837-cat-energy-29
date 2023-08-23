@@ -56,47 +56,49 @@
     </p>
     <div class="form-container__wrapper form-parametrs">
       <form class="form-parametrs__container" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form-parametrs__box-info box-info">
-          <div class="box-info__question">
-            <label class="box-info__field">
-              Имя:*
-              <input class="box-info__enter" type="text" name="nickname" placeholder="Укажите имя питомца" value="Барсик" required>
-            </label>
+        <div class="form-parametrs__box">
+          <div class="form-parametrs__box-info box-info">
+            <div class="box-info__question">
+              <label class="box-info__field">
+                Имя:*
+                <input class="box-info__enter" type="text" name="nickname" placeholder="Укажите имя питомца" value="Барсик" required>
+              </label>
+            </div>
+            <div class="box-info__question">
+              <label class="box-info__field">
+                Вес&nbsp;(Кг):*
+                  <input class="box-info__enter" type="text" name="weight" placeholder="Укажите полный вес" value="7" required>
+              </label>
+            </div>
+            <div class="box-info__question">
+              <label class="box-info__field">
+                Возраст&nbsp;(Лет):*
+                  <input class="box-info__enter" type="text" name="age" id="age" placeholder="Укажите полный вес" value="7" required>
+              </label>
+            </div>
           </div>
-          <div class="box-info__question">
-            <label class="box-info__field">
-              Вес&nbsp;(Кг):*
-                <input class="box-info__enter" type="text" name="weight" placeholder="Укажите полный вес" value="7" required>
-            </label>
-          </div>
-          <div class="box-info__question">
-            <label class="box-info__field">
-              Возраст&nbsp;(Лет):*
-                <input class="box-info__enter" type="text" name="age" id="age" placeholder="Укажите полный вес" value="7" required>
-            </label>
-          </div>
-        </div>
-        <div class="form-parametrs__box-program box-program">
-          <p class="visually-hidden">
-            Выберите тип программы.
-          </p>
-          <div class="box-program__effect">
-            <input class="custom-radio" type="radio" id="slim" name="slim" checked>
-            <label for="slim">
-              Похудение
-            </label>
-          </div>
-          <div class="box-program__effect">
-            <input class="custom-radio" type="radio" id="fat" name="fat">
-            <label for="fat">
-              Набор массы
-            </label>
-          </div>
-          <div class="box-program__effect">
-            <input class="custom-radio" type="radio" id="advice" name="advice">
-            <label for="advice">
-              Не знаю (нужен ваш совет)
-            </label>
+          <div class="form-parametrs__box-program box-program">
+            <p class="visually-hidden">
+              Выберите тип программы.
+            </p>
+            <div class="box-program__effect">
+              <input class="custom-radio" type="radio" id="slim" name="slim" checked>
+              <label for="slim">
+                Похудение
+              </label>
+            </div>
+            <div class="box-program__effect">
+              <input class="custom-radio" type="radio" id="fat" name="fat">
+              <label for="fat">
+                Набор массы
+              </label>
+            </div>
+            <div class="box-program__effect">
+              <input class="custom-radio" type="radio" id="advice" name="advice">
+              <label for="advice">
+                Не знаю (нужен ваш совет)
+              </label>
+            </div>
           </div>
         </div>
         <h2 class="form-parametrs__contact-title">
@@ -122,35 +124,39 @@
           Дополнительно
         </h2>
         <div class="form-parametrs__addition-info box-addition">
-          <div class="box-addition__add">
-            <input class="custom-radio" type="checkbox" id="sugar" name="sugar" checked>
-            <label for="sugar">
-              Сахарозаменитель
-            </label>
-          </div>
-          <div class="box-addition__add">
-            <input class="custom-radio" type="checkbox" id="water" name="water">
-            <label for="water">
-              Питьевая вода
-            </label>
-          </div>
-          <div class="box-addition__add">
-            <input class="custom-radio" type="checkbox" id="milk" name="milk">
-            <label for="milk">
-              Молоко
-            </label>
-          </div>
-          <div class="box-addition__add">
-            <input class="custom-radio" type="checkbox" id="vitamin" name="vitamin">
-            <label for="vitamin">
-              Витамины
-            </label>
+          <div class="box-addition__add-box">
+            <div class="box-addition__add">
+              <input class="custom-radio" type="checkbox" id="sugar" name="sugar" checked>
+              <label for="sugar">
+                Сахарозаменитель
+              </label>
+            </div>
+            <div class="box-addition__add">
+              <input class="custom-radio" type="checkbox" id="water" name="water">
+              <label for="water">
+                Питьевая вода
+              </label>
+            </div>
+            <div class="box-addition__add">
+              <input class="custom-radio" type="checkbox" id="milk" name="milk">
+              <label for="milk">
+                Молоко
+              </label>
+            </div>
+            <div class="box-addition__add">
+              <input class="custom-radio" type="checkbox" id="vitamin" name="vitamin">
+              <label for="vitamin">
+                Витамины
+              </label>
+            </div>
           </div>
         </div>
-        <input class="form-parametrs__subscribe button" type="submit" value="Отправить заявку">
-        <p class="form-parametrs__attantion">
-          * — Обязательные поля
-        </p>
+        <div class="form-parametrs__subscribe-box">
+          <input class="form-parametrs__subscribe button" type="submit" value="Отправить заявку">
+          <p class="form-parametrs__attantion">
+            * — Обязательные поля
+          </p>
+        </div>
       </form>
     </div>
   </main>
