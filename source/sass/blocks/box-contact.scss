@@ -29,3 +29,27 @@
   text-transform: uppercase;
   width: 100%;
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .box-contact {
+    gap: 20px;
+  }
+
+  .box-contact__field {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .box-contact {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .box-contact__field {
+    font-size: 20px;
+    line-height: 20px;
+    width: 570px;
+  }
+}

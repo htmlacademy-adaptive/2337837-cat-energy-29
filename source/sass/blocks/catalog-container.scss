@@ -1,6 +1,19 @@
 .catalog-container {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   background-color: #ffffff;
   border-top: 1px solid #ebebeb;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .catalog-container {
+    border-top: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .catalog-container {
+    background-color: #ffffff;
+    border: none;
+  }
 }

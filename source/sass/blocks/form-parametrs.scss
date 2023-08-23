@@ -61,8 +61,9 @@
 
 .form-parametrs__comment-info {
   margin: 0;
-  padding: 14px 0 0 0;
+  padding: 14px 0 0 15px;
   width: 280px;
+  min-height: 150px;
   color: #444444;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -86,10 +87,17 @@
 .form-parametrs__addition-info {
   margin: 0;
   padding: 0 0 34px 0;
+  width: 100%;
+}
+
+.form-parametrs__subscribe-box {
+  margin: 0;
+  padding: 0;
 }
 
 .form-parametrs__subscribe {
   width: 100%;
+  padding: 10px 0;
 }
 
 .form-parametrs__attantion {
@@ -102,4 +110,134 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .form-parametrs__box-info {
+    gap: 20px;
+  }
+
+  .form-parametrs__box-program {
+    padding: 23px 0 27px 27px;
+    gap: 23px;
+    border: 1px solid #e7e7e7;
+  }
+
+  .form-parametrs__contact-title {
+    padding: 65px 0 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-parametrs__contact-address {
+    padding: 0;
+  }
+
+  .form-parametrs__comment {
+    padding: 65px 0 98px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-parametrs__comment-info {
+    margin: 0;
+    padding: 11px 0 0 20px;
+    width: 628px;
+    min-height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: start;
+  }
+
+  .form-parametrs__addition {
+    padding: 65px 0 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-parametrs__addition-info {
+    margin: 0;
+    padding: 0 0 54px 0;
+    width: 282px;
+    display: flex;
+  }
+
+  .form-parametrs__subscribe-box {
+    margin: 0;
+    padding: 0 0 60px 0;
+  }
+
+  .form-parametrs__subscribe {
+    width: 282px;
+    padding: 14px 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form-parametrs__box-info {
+    gap: 20px;
+  }
+
+  .form-parametrs__box-program {
+    padding: 23px 0 27px 27px;
+    gap: 23px;
+    border: 1px solid #e7e7e7;
+    width: 570px;
+  }
+
+  .form-parametrs__contact-title {
+    padding: 65px 0 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-parametrs__contact-address {
+    padding: 0;
+  }
+
+  .form-parametrs__comment {
+    padding: 65px 0 98px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-parametrs__comment-info {
+    margin: 0;
+    padding: 9px 0 0 20px;
+    width: 1220px;
+    min-height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-parametrs__addition {
+    padding: 65px 0 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-parametrs__addition-info {
+    margin: 0;
+    padding: 0 0 54px 0;
+    width: 282px;
+    display: flex;
+  }
+
+  .form-parametrs__subscribe-box {
+    margin: 0;
+    padding: 0 0 60px 0;
+  }
+
+  .form-parametrs__subscribe {
+    width: 570px;
+    margin: 0;
+    padding: 14px 0;
+    display: inline-flex;
+  }
+
+  .form-parametrs__attantion {
+    margin: 0;
+    padding-left: 80px;
+    display: inline-flex;
+  }
 }

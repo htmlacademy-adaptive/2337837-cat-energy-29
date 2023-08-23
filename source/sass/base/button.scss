@@ -2,24 +2,25 @@
 .button {
   margin: 0;
   padding: 0;
-  height: 40px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
   align-items: center;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: #ffffff;
   background-color: #68b738;
   border: none;
   cursor: pointer;
 }
 
-.button--more {
+.button--second {
   color: #444444;
   background-color: #f2f2f2;
-  border: none;
-  cursor: pointer;
 }
