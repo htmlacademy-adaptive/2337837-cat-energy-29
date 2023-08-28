@@ -1,27 +1,10 @@
 .site-list {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
   font-size: 20px;
   line-height: 20px;
-}
 
-.site-list__item {
-  padding: 22px 0 24px 0;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-top: 1px solid #e6e6e6;
-}
-
-.site-list__item a {
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-@media (min-width: 768px) and (max-width: 1439px) {
-  .site-list {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-start;
     gap: 33px;
@@ -29,22 +12,7 @@
     line-height: 24px;
   }
 
-  .site-list__item {
-    padding: 12px 0 12px 0;
-    color: #000000;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-top: none;
-  }
-
-  .site-list__item--view-1 {
-    color: #ffffff;
-    border-top: none;
-  }
-}
-
-@media (min-width: 1440px) {
-  .site-list {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: flex-start;
     gap: 33px;
@@ -53,21 +21,47 @@
     line-height: 24px;
     position: relative;
   }
+}
 
-  .site-list__item {
+.site-list__item {
+  padding: 22px 0 24px 0;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
     padding: 12px 0 12px 0;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
+    color: #000000;
     border-top: none;
   }
 
-  .site-list__item--view-1 a {
+  @media (min-width: $desktop-width) {
     padding: 12px 0 12px 0;
     color: #ffffff;
+    border-top: none;
+  }
+}
+
+.site-list__item a {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-list__item--view-1 a {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
     background: none;
-    text-transform: uppercase;
-    text-decoration: none;
     border-top: none;
   }
 }

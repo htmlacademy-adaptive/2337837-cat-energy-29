@@ -1,6 +1,10 @@
 .add-product {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
 
 .add-product__name {
@@ -12,6 +16,18 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .add-product__structure {
@@ -22,6 +38,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+    width: 285px;
+  }
 }
 
 .add-product__description {
@@ -29,6 +50,15 @@
   padding: 13px 0 15px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    gap: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .add-product__parametr {
@@ -39,72 +69,30 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
 
 .add-product__value {
   margin: 0;
   padding: 0;
-}
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .add-product__name {
-    padding: 0;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .add-product__description {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 49px;
-  }
-
-  .add-product__parametr {
-    padding: 0;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-  }
-
-  .add-product__value {
+  @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
   }
-}
 
-@media (min-width: 1440px) {
-  .add-product {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  .add-product__name {
-    padding: 0;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .add-product__description {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .add-product__structure {
-    padding-right: 40px;
-    width: 285px;
-  }
-
-  .add-product__parametr {
-    padding: 0;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-  }
-
-  .add-product__value {
+  @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
   }

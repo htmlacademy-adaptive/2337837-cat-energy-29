@@ -2,11 +2,33 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .box-addition__add-box {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 .box-addition__add {
@@ -17,24 +39,8 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-}
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .box-addition {
-    display: flex;
-    width: 100%;
-  }
-
-  .box-addition__add-box {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 32px;
-  }
-
-  .box-addition__add {
+  @media (min-width: $tablet-width) {
     padding: 0;
     font-size: 20px;
     line-height: 20px;
@@ -45,24 +51,8 @@
     text-align: center;
     align-items: center;
   }
-}
 
-@media (min-width: 1440px) {
-  .box-addition {
-    display: flex;
-    width: 100%;
-  }
-
-  .box-addition__add-box {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .box-addition__add {
+  @media (min-width: $desktop-width) {
     padding: 0;
     font-size: 20px;
     line-height: 20px;
