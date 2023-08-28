@@ -21,6 +21,10 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-1.png");
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-position: center;
     width: 245px;
     height: 288px;
   }
@@ -37,6 +41,11 @@
     justify-content: space-between;
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
 
 .bonus-card__image {
@@ -46,6 +55,7 @@
 
   @media (min-width: $tablet-width) {
     width: 80px;
+    padding: 57px 0 61px 77px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +75,13 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 71px 0 69px 264px;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0 0 43px;
+    text-align: center;
   }
 }
