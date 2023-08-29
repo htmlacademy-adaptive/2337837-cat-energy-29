@@ -59,22 +59,49 @@
 
 .programm__item--minus {
   margin: 0;
+  position: relative;
+  background-image: url("/img/program-logo-cat-1.svg");
+  background-position: 20px 24px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-position: 445px 81px;
+    background-size: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 52px 41px;
+    background-size: 100px;
+  }
 }
 
 .programm__item--plus {
   margin: 0;
+  position: relative;
+  background-image: url("/img/program-logo-cat-2.svg");
+  background-position: 13px 24px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-position: 411px 91px;
+    background-size: 268px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 33px 47px;
+    background-size: 134px;
+  }
 }
 
 .programm__title {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 70px;
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -84,7 +111,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 104px;
+    padding: 0 0 0 214px;
     font-size: 36px;
     line-height: 36px;
     text-align: start;
