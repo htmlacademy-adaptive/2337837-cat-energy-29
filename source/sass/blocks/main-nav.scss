@@ -1,4 +1,5 @@
 .main-nav {
+  margin-top: -30px;
   display: block;
   text-align: center;
 
@@ -35,6 +36,7 @@
 .main-nav--closed {
   @media (min-width: mobile-width-only) {
     display: none;
+
   }
 }
 
@@ -51,7 +53,7 @@
 }
 
 .main-nav--opened .main-nav__toggle::before {
-  content: "  ";
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -78,11 +80,10 @@
 
 .main-nav__toggle {
   padding: 0;
-  display: block;
-  position: absolute;
-  top: 23px;
-  right: 21px;
-  background-color: #f2f2f2;
+  position: relative;
+  top: -24px;
+  left: 127px;
+  background-color: #ffffff;
   width: 24px;
   height: 24px;
   border: none;

@@ -1,6 +1,4 @@
 .promo {
-  margin: 0;
-  padding: 25px 20px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
@@ -15,6 +13,12 @@
     position: relative;
     background-color: #eaeaea;
   }
+}
+
+.promo-container {
+  margin: 0 auto;
+  padding: 25px 0 40px;
+  width: 280px;
 }
 
 .promo__title {
@@ -44,7 +48,7 @@
 
 .promo__description {
   margin: 0;
-  padding: 40px 0 0 0;
+  padding: 40px 0 20px;
   color: #444444;
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -71,7 +75,7 @@
   margin: 0;
   padding: 20px 0 0 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 32px;
 
   @media (min-width: $tablet-width) {
@@ -146,7 +150,7 @@
 
 .promo__price {
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
@@ -179,7 +183,7 @@
 
 .promo__slider {
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {

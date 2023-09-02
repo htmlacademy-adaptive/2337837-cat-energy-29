@@ -1,6 +1,7 @@
 .catalog-main-products {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
@@ -19,13 +20,12 @@
 
 .catalog-main-products__title {
   margin: 0;
-  padding: 27px 20px;
+  padding: 27px 0 42px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -54,11 +54,11 @@
 
 .catalog-main-products__card {
   margin: 0 -20px;
-  padding: 20px 40px 25px;
+  padding: 20px 0 25px;
   display: flex;
   flex-direction: column;
   gap: 17px;
-  border-bottom: 1px solid #ebebeb;
+  border: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -99,7 +99,8 @@
 .catalog-main-products__list {
   margin: 0;
   padding: 0;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -130,13 +131,24 @@
   gap: 23px;
 }
 
-.catalog-main-products__item-image {
+.catalog-main-products__item {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 140px;
+  height: 107px;
+}
+
+.catalog-main-products__item-image {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 68px;
+  max-height: 86px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -157,6 +169,16 @@
     width: 200px;
     height: 210px;
   }
+}
+
+.catalog-main-products__item-image--pro {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 84px;
+  max-height: 100px;
 }
 
 .catalog-main-products__item-image--second {

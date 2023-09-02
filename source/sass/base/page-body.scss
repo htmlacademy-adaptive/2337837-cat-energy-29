@@ -4,9 +4,7 @@ html {
 
 .page-body {
   margin: 0 auto;
-  min-width: 280px;
-  width: 320px;
-  background-color: #e6e6e6;
+  min-width: 320px;
   color: #000000;
 
   @media (min-width: $tablet-width) {

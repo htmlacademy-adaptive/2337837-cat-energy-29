@@ -1,10 +1,23 @@
 .action {
-  margin: 20px 20px 49px;
-  padding: 0;
+  margin: 20px 0 49px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     margin: 45px 30px 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 71px 110px 69px;
+  }
+}
+
+.action-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {

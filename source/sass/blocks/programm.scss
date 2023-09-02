@@ -1,6 +1,5 @@
 .programm {
-  margin: 20px 20px;
-  padding: 0;
+  margin: 20px 0;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
@@ -13,8 +12,8 @@
 }
 
 .programm-variation {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  width: 280px;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -127,6 +126,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  min-width: 227px;
 
   @media (min-width: $tablet-width) {
     padding: 24px 0 52px;
@@ -141,6 +141,16 @@
     line-height: 24px;
     width: 457px;
   }
+}
+
+.programm__description::after {
+  position: absolute;
+  content: "";
+  left: 20px;
+  bottom: 53px;
+  width: 240px;
+  height: 1px;
+  background-color: #d9d9d9;
 }
 
 .programm__link-box {

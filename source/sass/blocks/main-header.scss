@@ -12,7 +12,7 @@
 }
 
 .main-header-position {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: start;
 
@@ -32,15 +32,20 @@
 }
 
 .main-header__logo-box {
-  margin: 0;
-  padding: 13px 38px 13px 20px;
+  margin: 0 auto;
+  padding: 13px 20px 13px 20px;
+  position: relative;
   display: flex;
+  justify-content: flex-start;
   gap: 56px;
   align-items: center;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 0;
     gap: 13px;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
