@@ -1,6 +1,7 @@
 .form-parametrs {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: auto;
 }
 
 .form-parametrs__container {
@@ -11,6 +12,14 @@
 .form-parametrs__box {
   margin: 0 auto;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 628px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -46,9 +55,11 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 23px 0 27px 27px;
     gap: 23px;
     border: 1px solid #e7e7e7;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,7 +72,7 @@
 
 .form-parametrs__contact-title-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .form-parametrs__contact-title-wrapper::before {
@@ -69,6 +80,11 @@
   width: calc(50% - 160px);
   height: 38px;
   border-bottom: 2px solid #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 356px);
+    height: 84px;
+  }
 }
 
 .form-parametrs__contact-title-wrapper::after {
@@ -77,6 +93,10 @@
   height: 38px;
   border-bottom: 2px solid #68b738;
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 84px;
+  }
 }
 
 .form-parametrs__contact-title {
@@ -94,6 +114,7 @@
     padding: 65px 0 76px;
     font-size: 36px;
     line-height: 36px;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,7 +136,7 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    width: 628px;
   }
 
   @media (min-width: $desktop-width) {
@@ -149,6 +170,10 @@
 .form-parametrs__comment-wrapper {
   display: flex;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
 }
 
 .form-parametrs__comment-wrapper::before {
@@ -156,6 +181,11 @@
   width: calc(50% - 160px);
   height: 38px;
   border-bottom: 2px solid #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 356px);
+    height: 84px;
+  }
 }
 
 .form-parametrs__comment-wrapper::after {
@@ -164,11 +194,19 @@
   height: 38px;
   border-bottom: 2px solid #68b738;
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 84px;
+  }
 }
 
 .form-parametrs__comment-info-wrapper {
   margin: 0 auto;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
 }
 
 .form-parametrs__comment-info {
@@ -186,7 +224,7 @@
   border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 0 0 20px;
+    padding: 11px 0 0 0;
     width: 628px;
     height: 175px;
     font-size: 20px;
@@ -206,6 +244,10 @@
 .form-parametrs__addition-wrapper {
   display: flex;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
 }
 
 .form-parametrs__addition-wrapper::before {
@@ -213,6 +255,11 @@
   width: calc(50% - 160px);
   height: 38px;
   border-bottom: 2px solid #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 356px);
+    height: 84px;
+  }
 }
 
 .form-parametrs__addition-wrapper::after {
@@ -221,6 +268,10 @@
   height: 38px;
   border-bottom: 2px solid #68b738;
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 84px;
+  }
 }
 
 .form-parametrs__addition {
@@ -253,14 +304,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 0 54px 0;
-    width: 282px;
-    display: flex;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 0 54px 0;
-    width: 282px;
-    display: flex;
   }
 }
 
@@ -269,14 +312,12 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     padding: 0 0 60px 0;
     display: flex;
     gap: 64px;
     align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 0 60px 0;
+    width: 628px;
   }
 }
 
@@ -286,14 +327,9 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 0;
-    width: 282px;
-  }
-
-  @media (min-width: $desktop-width) {
     margin: 0;
     padding: 14px 0;
-    width: 570px;
+    width: 282px;
   }
 }
 

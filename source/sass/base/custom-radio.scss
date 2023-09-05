@@ -49,7 +49,7 @@
 }
 
 .custom-radio:focus + label::before {
-  border: 2px solid #444444;
+  outline: 2px solid #444444;
 }
 
 .custom-radio:focus:not(:checked) + label::before {

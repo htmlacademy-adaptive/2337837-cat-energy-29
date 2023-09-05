@@ -3,6 +3,7 @@
   padding: 0;
   font-size: 20px;
   line-height: 20px;
+  background: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -13,13 +14,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: flex-start;
     gap: 33px;
-    background: none;
     font-size: 20px;
     line-height: 24px;
-    position: relative;
+    background: none;
   }
 }
 
@@ -38,8 +36,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 12px 0 12px 0;
-    color: #ffffff;
+    color: #000000;
     border-top: none;
+    background: none;
   }
 }
 
@@ -47,21 +46,12 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  background: none;
 }
 
 .site-list__item--view-1 a {
-  color: #000000;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-
-  @media (min-width: $tablet-width) {
-    color: #000000;
-    border-top: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
-    background: none;
-    border-top: none;
-  }
+  background: none;
 }

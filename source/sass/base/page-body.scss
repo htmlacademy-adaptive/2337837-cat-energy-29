@@ -15,6 +15,17 @@ html {
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     min-width: 1440px;
+    background: linear-gradient(to right, #ffffff 50%, #64a83c 50%);
+    border: none;
+  }
+}
+
+.page-body--second {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    min-width: 1440px;
+    background: none;
+    border: none;
   }
 }
 

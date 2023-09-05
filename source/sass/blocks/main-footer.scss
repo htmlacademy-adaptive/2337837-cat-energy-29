@@ -1,6 +1,11 @@
 .main-footer {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 75px 0 0;
+    background-color: #f2f2f2;
+  }
 }
 
 .main-footer__contacts {
@@ -9,6 +14,9 @@
   background-color: #ffffff;
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 1440px;
+    background-color: #f2f2f2;
     position: relative;
   }
 }
@@ -26,7 +34,9 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 70px;
+    padding: 61px 0;
+    width: 628px;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,10 +64,6 @@
   @media (min-width: $tablet-width) {
     width: 163px;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 163px;
-  }
 }
 
 .main-footer__title {
@@ -75,11 +81,6 @@
     font-size: 20px;
     line-height: 26px;
   }
-
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 26px;
-  }
 }
 
 .main-footer__description-box {
@@ -88,11 +89,6 @@
   width: 140px;
 
   @media (min-width: $tablet-width) {
-    width: 157px;
-    text-align: right;
-  }
-
-  @media (min-width: $desktop-width) {
     width: 157px;
     text-align: right;
   }
@@ -112,11 +108,6 @@
     font-size: 16px;
     line-height: 20px;
   }
-
-  @media (min-width: $desktop-width) {
-    font-size: 16px;
-    line-height: 20px;
-  }
 }
 
 .main-footer__map {
@@ -130,15 +121,12 @@
   height: 362px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("/img/map-tablet.png");
-    width: 768px;
+    background-image: url("/img/footer-map-tablet.png");
     height: 400px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("/img/map-desktop.png");
-    width: 1440px;
-    height: 400px;
+    background-image: url("/img/footer-map-tablet-desktop.png");
   }
 }
 
@@ -157,6 +145,7 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
@@ -164,6 +153,7 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
+    width: 1220px;
   }
 }
 
@@ -198,12 +188,6 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    align-items: center;
-    border: none;
-  }
-
-  @media (min-width: $desktop-width) {
     padding: 0;
     align-items: center;
     border: none;

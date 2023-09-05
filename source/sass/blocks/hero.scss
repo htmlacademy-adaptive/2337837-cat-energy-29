@@ -5,12 +5,8 @@
   font-family: "Oswald", sans-serif;
   font-style: normal;
 
-  @media (min-width: $tablet-width) {
-    position: relative;
-  }
-
   @media (min-width: $desktop-width) {
-    position: relative;
+    background: linear-gradient(to right, #ffffff 50%, #64a83c 50%);
   }
 }
 
@@ -29,27 +25,31 @@
   border: none;
 
   @media (min-width: $tablet-width) {
+    width: 588px;
     text-align: start;
     color: #000000;
     background: none;
-    min-width: 0;
-    min-height: 0;
+    height: 200px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 0;
-    text-align: start;
-    color: #000000;
-    background: none;
-    min-width: 0;
-    min-height: 0;
+    width: 1060px;
   }
 }
 
 .hero-welcome-box {
   margin: 0 auto;
   background-color: #64a83c;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    background: none;
+  }
 }
 
 .hero__title {
@@ -62,7 +62,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 65px 120px 40px;
+    padding: 40px 0;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
@@ -70,7 +70,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 36px 0 40px 190px;
+    padding: 55px 0 40px;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
@@ -88,22 +88,15 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 0 120px 21px;
+    padding: 0;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 190px;
     font-size: 20px;
     line-height: 20px;
   }
-}
-
-.link-container {
-  margin: 0 auto;
-  box-sizing: border-box;
-  width: 280px;
 }
 
 .hero__button {
@@ -118,26 +111,49 @@
 .hero__image-box {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 708px;
+    height: 609px;
+    padding: 20px 0 0;
+    background-image: url("/img/index-product-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 709px;
+    background-position: 0 40px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    background-image: url("/img/index-product-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 552px;
+    background-position: 0;
+    border: none;
+    position: relative;
+    top: -290px;
+    left: 188px;
+  }
 }
 
 .hero__image {
   margin: -135px 20px 3px 20px;
 
   @media (min-width: $tablet-width) {
+    display: none;
     margin: 0;
-    padding: 0;
-    width: 100%;
-    height: fit-content;
+    text-align: right;
   }
+}
+
+.link-container {
+  margin: -24px auto;
+  box-sizing: border-box;
+  width: 280px;
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 0;
-    width: 552px;
-    height: 499px;
-    position: absolute;
-    top: -69px;
-    right: 308px;
+    margin: -161px auto;
   }
 }
 
@@ -149,22 +165,17 @@
   line-height: 18px;
   text-transform: uppercase;
 
-
   @media (min-width: $tablet-width) {
     padding: 14px 26px;
-    position: absolute;
-    top: 305px;
-    left: 120px;
+    position: relative;
+    bottom: 540px;
+    right: 156px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 14px 26px;
-    position: absolute;
-    top: 260px;
-    left: 190px;
-    font-size: 20px;
-    line-height: 20px;
+    bottom: 369px;
+    right: 389px;
   }
 }

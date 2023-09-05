@@ -4,11 +4,11 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    margin: 0;
   }
 }
 
@@ -29,14 +29,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    display: block;
   }
 }
 
 .main-nav--closed {
   @media (min-width: mobile-width-only) {
     display: none;
-
   }
 }
 
@@ -74,8 +73,22 @@
 }
 
 .main-nav__wrapper {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 436px;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+    background: none;
+  }
 }
 
 .main-nav__toggle {
@@ -103,16 +116,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -55px;
+    right: -589px;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop-1.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #ffffff;
     min-width: 720px;
     min-height: 694px;
     border: none;

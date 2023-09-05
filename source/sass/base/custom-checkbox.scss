@@ -38,17 +38,17 @@
 }
 
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
-  border-color: #f12020;
+  outline: #f12020;
   background-color: #ffffff;
 }
 
 .custom-checkbox:not(:disabled):active + label::before {
-  background-color: #faea05;
+  outline: #faea05;
   border-color: #1336d1;
 }
 
 .custom-checkbox:focus + label::before {
-  border: 2px solid #444444;
+  outline: 2px solid #444444;
 }
 
 .custom-checkbox:focus:not(:checked) + label::before {

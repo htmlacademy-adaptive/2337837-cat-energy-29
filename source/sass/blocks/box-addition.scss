@@ -4,11 +4,8 @@
   gap: 13px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -21,17 +18,11 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    width: 628px;
   }
 }
 
