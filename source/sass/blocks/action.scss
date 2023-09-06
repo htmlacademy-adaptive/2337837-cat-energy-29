@@ -109,8 +109,14 @@
 }
 
 .action__item-image {
-  width: 60px;
-  height: 60px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #68b738;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .action__item-description {
