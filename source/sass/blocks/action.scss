@@ -31,15 +31,21 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  counter-reset: order;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 72px 0;
+    gap: 144px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 72px 0 0;
+    gap: 0;
   }
 }
 
@@ -121,6 +127,20 @@
     width: 244px;
     font-size: 16px;
     line-height: 24px;
+    position: relative;
+    z-index: 0;
+
+    &::after {
+      position: absolute;
+      left: 111px;
+      top: 0;
+      color: #f2f2f2;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      counter-increment: order;
+      content: counter(order);
+      z-index: -1;
+    }
   }
 
   @media (min-width: $desktop-width) {

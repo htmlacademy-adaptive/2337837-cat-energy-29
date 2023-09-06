@@ -6,10 +6,6 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-  }
 }
 
 .main-nav--closed .main-nav__toggle::before {

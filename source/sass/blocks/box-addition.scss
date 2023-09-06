@@ -24,6 +24,11 @@
     gap: 32px;
     width: 628px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    width: 1220px;
+  }
 }
 
 .box-addition__add {

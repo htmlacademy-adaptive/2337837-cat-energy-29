@@ -8,12 +8,10 @@ html {
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     min-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
     min-width: 1440px;
     background: linear-gradient(to right, #ffffff 50%, #64a83c 50%);
     border: none;
