@@ -3,17 +3,12 @@
   padding: 0;
   background-color: #ffffff;
   border-top: 1px solid #ebebeb;
-}
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .catalog-container {
+  @media (min-width: $tablet-width) {
     border-top: none;
   }
-}
 
-@media (min-width: 1440px) {
-  .catalog-container {
-    background-color: #ffffff;
+  @media (min-width: $desktop-width) {
     border: none;
   }
 }

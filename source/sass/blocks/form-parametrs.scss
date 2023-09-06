@@ -1,6 +1,7 @@
 .form-parametrs {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: auto;
 }
 
 .form-parametrs__container {
@@ -8,44 +9,138 @@
   padding: 0;
 }
 
+.form-parametrs__box {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
 .form-parametrs__box-info {
   margin: 0;
-  padding: 0;
+  padding: 0 0 24px 0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
 .form-parametrs__box-program {
-  margin: 0;
-  padding: 46px 0 0;
+  margin: 0 -20px;
+  padding: 22px 20px 19px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   gap: 13px;
+  border: 1px solid #d9d9d9;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 23px 0 27px 27px;
+    gap: 23px;
+    border: 1px solid #e7e7e7;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 13px;
+    width: 570px;
+  }
+}
+
+.form-parametrs__contact-title-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.form-parametrs__contact-title-wrapper::before {
+  content: " ";
+  width: calc(50% - 160px);
+  height: 38px;
+  border-bottom: 2px solid #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 356px);
+    height: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(50% - 650px);
+    height: 84px;
+  }
+}
+
+.form-parametrs__contact-title-wrapper::after {
+  content: " ";
+  width: 10px;
+  height: 38px;
+  border-bottom: 2px solid #68b738;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 84px;
+  }
 }
 
 .form-parametrs__contact-title {
   margin: 0;
-  padding: 45px 0 35px;
+  padding: 24px 0 35px;
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  width: 160px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 76px;
+    font-size: 36px;
+    line-height: 36px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 0 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form-parametrs__contact-address {
-  margin: 0;
-  padding: 45px 0 35px;
+  margin: 0 auto;
+  padding: 0;
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form-parametrs__comment {
@@ -57,12 +152,80 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 98px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 0 98px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form-parametrs__comment-wrapper {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+}
+
+.form-parametrs__comment-wrapper::before {
+  content: " ";
+  width: calc(50% - 160px);
+  height: 38px;
+  border-bottom: 2px solid #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 356px);
+    height: 84px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 356px);
+    height: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(50% - 650px);
+    height: 84px;
+  }
+}
+
+.form-parametrs__comment-wrapper::after {
+  content: " ";
+  width: 10px;
+  height: 38px;
+  border-bottom: 2px solid #68b738;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 84px;
+  }
+}
+
+.form-parametrs__comment-info-wrapper {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form-parametrs__comment-info {
   margin: 0;
-  padding: 14px 0 0 15px;
-  width: 280px;
+  padding: 14px 0 15px;
+  width: 100%;
   min-height: 150px;
   color: #444444;
   font-family: "Oswald", sans-serif;
@@ -71,10 +234,65 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 0 0 0;
+    width: 628px;
+    height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 0 0 20px;
+    width: 1200px;
+    min-height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-parametrs__addition-wrapper {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+}
+
+.form-parametrs__addition-wrapper::before {
+  content: " ";
+  width: calc(50% - 160px);
+  height: 38px;
+  border-bottom: 2px solid #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 356px);
+    height: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(50% - 650px);
+  }
+}
+
+.form-parametrs__addition-wrapper::after {
+  content: " ";
+  width: 10px;
+  height: 38px;
+  border-bottom: 2px solid #68b738;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 84px;
+  }
 }
 
 .form-parametrs__addition {
-  margin: 0;
+  margin: 0 auto;
   padding: 23px 0 36px;
   color: #000000;
   font-family: "Oswald", sans-serif;
@@ -82,22 +300,57 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 0 57px;
+  }
 }
 
 .form-parametrs__addition-info {
-  margin: 0;
+  margin: 0 auto;
   padding: 0 0 34px 0;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 54px 0;
+  }
 }
 
 .form-parametrs__subscribe-box {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0 0 60px 0;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    gap: 80px;
+  }
 }
 
 .form-parametrs__subscribe {
-  width: 100%;
+  margin: 0 auto;
   padding: 10px 0;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 14px 0;
+    width: 282px;
+  }
 }
 
 .form-parametrs__attantion {
@@ -110,134 +363,13 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-}
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .form-parametrs__box-info {
-    gap: 20px;
-  }
-
-  .form-parametrs__box-program {
-    padding: 23px 0 27px 27px;
-    gap: 23px;
-    border: 1px solid #e7e7e7;
-  }
-
-  .form-parametrs__contact-title {
-    padding: 65px 0 76px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .form-parametrs__contact-address {
+  @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 0;
   }
 
-  .form-parametrs__comment {
-    padding: 65px 0 98px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .form-parametrs__comment-info {
-    margin: 0;
-    padding: 11px 0 0 20px;
-    width: 628px;
-    min-height: 175px;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: start;
-  }
-
-  .form-parametrs__addition {
-    padding: 65px 0 57px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .form-parametrs__addition-info {
-    margin: 0;
-    padding: 0 0 54px 0;
-    width: 282px;
-    display: flex;
-  }
-
-  .form-parametrs__subscribe-box {
-    margin: 0;
-    padding: 0 0 60px 0;
-  }
-
-  .form-parametrs__subscribe {
-    width: 282px;
-    padding: 14px 0;
-  }
-}
-
-@media (min-width: 1440px) {
-  .form-parametrs__box-info {
-    gap: 20px;
-  }
-
-  .form-parametrs__box-program {
-    padding: 23px 0 27px 27px;
-    gap: 23px;
-    border: 1px solid #e7e7e7;
-    width: 570px;
-  }
-
-  .form-parametrs__contact-title {
-    padding: 65px 0 76px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .form-parametrs__contact-address {
-    padding: 0;
-  }
-
-  .form-parametrs__comment {
-    padding: 65px 0 98px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .form-parametrs__comment-info {
-    margin: 0;
-    padding: 9px 0 0 20px;
-    width: 1220px;
-    min-height: 175px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .form-parametrs__addition {
-    padding: 65px 0 57px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .form-parametrs__addition-info {
-    margin: 0;
-    padding: 0 0 54px 0;
-    width: 282px;
-    display: flex;
-  }
-
-  .form-parametrs__subscribe-box {
-    margin: 0;
-    padding: 0 0 60px 0;
-  }
-
-  .form-parametrs__subscribe {
-    width: 570px;
-    margin: 0;
-    padding: 14px 0;
-    display: inline-flex;
-  }
-
-  .form-parametrs__attantion {
-    margin: 0;
-    padding-left: 80px;
+  @media (min-width: $desktop-width) {
     display: inline-flex;
   }
 }

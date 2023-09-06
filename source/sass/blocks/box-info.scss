@@ -1,6 +1,12 @@
 .box-info {
-  margin: 0;
-  padding: 0;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 0;
+  }
 }
 
 .box-info__question {
@@ -19,6 +25,16 @@
   display: flex;
   gap: 13px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .box-info__enter {
@@ -31,36 +47,14 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 100%;
-}
+  border: 1px solid #e7e7e7;
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .box-info {
-    padding-bottom: 72px;
-  }
-
-  .box-info__field {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
 
-  .box-info__enter {
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .box-info {
-    padding-bottom: 0;
-    width: 570px;
-  }
-
-  .box-info__field {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .box-info__enter {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
   }

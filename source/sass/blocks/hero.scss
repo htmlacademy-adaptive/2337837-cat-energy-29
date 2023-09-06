@@ -4,25 +4,75 @@
   text-align: center;
   font-family: "Oswald", sans-serif;
   font-style: normal;
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to right, #ffffff 50%, #64a83c 50%);
+  }
 }
 
 .hero-welcome {
+  margin: 0 auto;
+  padding: 0;
   text-align: center;
   color: #ffffff;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-1.png");
   background-repeat: no-repeat;
-  background-color: #ffffff;
-  min-width: 320px;
-  min-height: 302px;
+  background-color: #68b738;
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 302px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 588px;
+    text-align: start;
+    color: #000000;
+    background: none;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1060px;
+  }
+}
+
+.hero-welcome-box {
+  margin: 0 auto;
+  background-color: #64a83c;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+  }
 }
 
 .hero__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 27px 35px 26px 36px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  width: 249px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 40px 0;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 55px 0 40px;
+    background: none;
+    width: 414px;
+  }
 }
 
 .hero__slogan {
@@ -32,151 +82,89 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-}
 
-.link-container {
-  margin: 0 20px;
-  box-sizing: border-box;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .hero__button {
+  margin: 0;
+  padding: 0;
   display: block;
-  padding: 8px 44px;
   text-decoration: none;
   border: none;
   cursor: pointer;
 }
 
-.link-container a {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
 .hero__image-box {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 708px;
+    height: 609px;
+    padding: 20px 0 0;
+    background-image: url("/img/index-product-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 709px;
+    background-position: 0 40px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/index-product-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 552px;
+    background-position: 0;
+    position: relative;
+    top: -290px;
+    left: 188px;
+  }
 }
 
 .hero__image {
   margin: -135px 20px 3px 20px;
-}
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .hero {
-    position: relative;
+  @media (min-width: $tablet-width) {
+    display: none;
     margin: 0;
-    padding: 0;
-  }
-
-  .hero-welcome {
-    margin: 0;
-    padding: 0;
-    text-align: start;
-    color: #000000;
-    background: none;
-    background-repeat: no-repeat;
-    background-color: #ffffff;
-    min-width: 0;
-    min-height: 0;
-    border: none;
-  }
-
-  .hero__title {
-    margin: 0;
-    padding: 65px 120px 40px;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .hero__slogan {
-    margin: 0;
-    padding: 0 120px 21px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-
-  .hero__image {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: fit-content;
-  }
-
-  .link-container a {
-    position: absolute;
-    top: 305px;
-    left: 120px;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 20px;
-    margin: 0;
-    padding: 14px 26px;
-    text-transform: uppercase;
+    text-align: right;
   }
 }
 
-@media (min-width: 1440px) {
-  .hero {
-    position: relative;
-    margin: 0;
-  }
+.link-container {
+  margin: -24px auto;
+  box-sizing: border-box;
+  width: 280px;
 
-  .hero-welcome {
-    margin: 0;
-    padding: 0;
-    text-align: start;
-    color: #000000;
-    background: none;
-    background-repeat: no-repeat;
-    min-width: 0;
-    min-height: 0;
-    border: none;
+  @media (min-width: $desktop-width) {
+    margin: -176px auto;
   }
+}
 
-  .hero__title {
-    margin: 0;
-    padding: 0 0 40px 80px;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-    background: none;
-    width: 414px;
-  }
+.link-container a {
+  margin: 0;
+  padding: 8px 44px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 
-  .hero__slogan {
-    margin: 0;
-    padding: 0;
-    padding-left: 80px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-
-  .hero__image {
-    margin: 0;
-    padding: 0;
-    width: 552px;
-    height: 499px;
-    position: absolute;
-    top: -81px;
-    right: 221px;
-  }
-
-  .link-container a {
-    position: absolute;
-    top: 232px;
-    left: 80px;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 20px;
-    margin: 0;
+  @media (min-width: $tablet-width) {
     padding: 14px 26px;
-    text-transform: uppercase;
+    position: relative;
+    bottom: 540px;
+    right: 156px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 369px;
+    right: 389px;
   }
 }

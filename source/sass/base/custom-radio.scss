@@ -1,0 +1,66 @@
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.custom-radio + label::before {
+  content: " ";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+}
+
+.custom-radio:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #f12020;
+  background-color: #ffffff;
+}
+
+.custom-radio:not(:disabled):active + label::before {
+  background-color: #faea05;
+  border-color: #1336d1;
+}
+
+.custom-radio:focus + label::before {
+  outline: 2px solid #444444;
+}
+
+.custom-radio:focus:not(:checked) + label::before {
+  border-color: #13d1c1;
+}
+
+.custom-radio:checked + label::before {
+  background-image: url("/img/custom-radio-button-active.svg");
+}
+
+.custom-radio:disabled + label::before {
+  background-color: #68b738;
+  opacity: 0.3;
+}

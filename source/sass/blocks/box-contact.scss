@@ -3,6 +3,15 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
 .box-contact__field {
@@ -16,6 +25,17 @@
   display: flex;
   gap: 13px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 570px;
+  }
 }
 
 .box-contact__enter {
@@ -28,28 +48,5 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 100%;
-}
-
-@media (min-width: 768px) and (max-width: 1439px) {
-  .box-contact {
-    gap: 20px;
-  }
-
-  .box-contact__field {
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .box-contact {
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .box-contact__field {
-    font-size: 20px;
-    line-height: 20px;
-    width: 570px;
-  }
+  border: 1px solid #e7e7e7;
 }
