@@ -4,29 +4,44 @@
   justify-content: center;
   text-align: center;
   color: #ffffff;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-1.png");
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-bonus-background-mobile.png");
   background-repeat: no-repeat;
   background-color: #ffffff;
   width: 280px;
   height: 290px;
 
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-bonus-background-mobile@2x.png");
+    background-size: 280px auto;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 70px 0;
     justify-content: space-between;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-tablet-fon.png");
-    width: 100%;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-bonus-background-tablet.png");
+    width: 707px;
     height: 200px;
     box-sizing: border-box;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-bonus-background-tablet@2x.png");
+      background-size: 707px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-background-1.png");
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-bonus-background-desktop.png");
     background-repeat: no-repeat;
     background-color: #ffffff;
     background-position: center;
     width: 245px;
     height: 288px;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-bonus-background-desktop@2x.png");
+      background-size: 245px auto;
+    }
   }
 }
 
