@@ -112,21 +112,19 @@
 .main-footer__map {
   margin: 0;
   padding: 0;
-  background-image: url("/img/footer-map.png");
-  background-color: #f2f2f2;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
   height: 362px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("/img/footer-map-tablet.png");
     height: 400px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("/img/footer-map-tablet-desktop.png");
   }
+}
+
+.main-footer__map iframe {
+  display: block;
+  border: none;
 }
 
 .main-footer__social {

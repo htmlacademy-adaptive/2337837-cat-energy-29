@@ -24,6 +24,11 @@
   height: 302px;
   border: none;
 
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-1@2x.png");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
     width: 588px;
     text-align: start;
@@ -104,25 +109,18 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    margin: 20px auto 0;
     width: 708px;
     height: 609px;
-    padding: 20px 0 0;
-    background-image: url("/img/index-product-tablet.png");
-    background-repeat: no-repeat;
-    background-size: 709px;
-    background-position: 0 40px;
-    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("/img/index-product-desktop.png");
-    background-repeat: no-repeat;
-    background-size: 552px;
-    background-position: 0;
+    margin: 116px auto 0;
     position: relative;
-    top: -290px;
-    left: 188px;
+    top: -404px;
+    left: 108px;
+    width: 552px;
+    height: 499px;
   }
 }
 
@@ -130,8 +128,16 @@
   margin: -135px 20px 3px 20px;
 
   @media (min-width: $tablet-width) {
-    display: none;
-    margin: 0;
+    display: inline;
+    margin: 20px 0 0;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin: 54px 156px 0 0;
     text-align: right;
   }
 }
@@ -164,7 +170,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 369px;
+    bottom: 357px;
     right: 389px;
   }
 }

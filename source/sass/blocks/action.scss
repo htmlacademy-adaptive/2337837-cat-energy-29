@@ -87,12 +87,6 @@
     font-size: 60px;
     line-height: 60px;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    font-size: 60px;
-    line-height: 60px;
-  }
 }
 
 .action__container {
@@ -109,6 +103,10 @@
 }
 
 .action__item-image {
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;

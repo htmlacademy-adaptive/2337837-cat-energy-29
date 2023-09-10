@@ -66,18 +66,13 @@
 .main-header__logo-image {
   margin: 0;
   padding: 0;
-  background-image: url("../img/logo-mobile.svg");
-  width: 33px;
-  height: 38px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/logo-tablet.svg");
     width: 60px;
     height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/logo-desktop.svg");
     width: 70px;
     height: 59px;
   }
