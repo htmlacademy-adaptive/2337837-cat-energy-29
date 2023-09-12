@@ -15,7 +15,7 @@
   padding: 0;
   text-align: center;
   color: #ffffff;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-1.png");
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/jpg/index-background-1.jpg");
   background-repeat: no-repeat;
   background-color: #68b738;
   background-position: center;
@@ -25,7 +25,7 @@
   border: none;
 
   @media (min-resolution: 2dppx) {
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-1@2x.png");
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/jpg/index-background-1@2x.jpg");
     background-size: 320px auto;
   }
 
@@ -93,6 +93,7 @@
     font-size: 20px;
     line-height: 20px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 0;
   }
