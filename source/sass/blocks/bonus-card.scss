@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 70px 0;
+    margin: 70px 0 75px;
     justify-content: space-between;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog-bonus-background-tablet.png");
     width: 707px;
@@ -65,7 +65,7 @@
 
 .bonus-card__image {
   margin: 0;
-  padding: 59px 0 48px;
+  padding: 59px 0 42px;
   text-align: center;
 
   @media (min-width: $tablet-width) {

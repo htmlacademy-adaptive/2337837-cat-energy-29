@@ -5,10 +5,11 @@
   gap: 14px;
 
   @media (min-width: $tablet-width) {
-    gap: 20px;
+    gap: 15px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 0 7px;
     flex-direction: row;
     gap: 20px;
   }
@@ -35,6 +36,7 @@
     font-size: 20px;
     line-height: 20px;
     width: 570px;
+    gap: 18px;
   }
 }
 
@@ -49,4 +51,14 @@
   text-transform: uppercase;
   width: 100%;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 12px 38px 8px 15px;
+    font-size: 20px;
+  }
 }

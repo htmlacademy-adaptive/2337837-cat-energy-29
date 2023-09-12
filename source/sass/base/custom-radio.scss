@@ -57,7 +57,7 @@
 }
 
 .custom-radio:checked + label::before {
-  background-image: url("/img/custom-radio-button-active.svg");
+  background-image: url("/img/svg/custom-radio-button-active.svg");
 }
 
 .custom-radio:disabled + label::before {

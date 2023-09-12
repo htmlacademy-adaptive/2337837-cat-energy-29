@@ -33,14 +33,16 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 0;
+    padding: 60px 0;
     width: 628px;
     align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 61px 70px;
-    width: 426px;
+    display: flex;
+    gap: 87px;
+    padding: 58px 79px 60px;
+    width: 408px;
     position: absolute;
     top: 95px;
     left: 110px;
@@ -62,6 +64,10 @@
 
   @media (min-width: $tablet-width) {
     width: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
@@ -88,8 +94,16 @@
   width: 140px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 157px;
+    gap: 12px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -105,7 +119,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 20px;
   }
 }
 
@@ -117,9 +130,6 @@
   @media (min-width: $tablet-width) {
     height: 400px;
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .main-footer__map iframe {
@@ -128,7 +138,16 @@
 }
 
 .main-footer__social {
+  padding: 0;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 7px 0 0;
+  }
 }
 
 .main-footer__social-box {
@@ -146,14 +165,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 30px;
     width: 1220px;
   }
 }
 
 .main-footer__social-box-link {
   margin: 0;
-  padding: 0 0 20px 0;
+  padding: 0 0 15px 0;
   display: flex;
   justify-content: center;
 
@@ -165,7 +183,7 @@
 
 .main-footer__list {
   margin: 0;
-  padding: 20px 0;
+  padding: 19px 0 14px;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -174,9 +192,13 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 4px 120px 0 160px;
     align-items: center;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 4px 378px 0 408px;
   }
 }
 
@@ -197,7 +219,7 @@
 
 .main-footer__copyright {
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 19px 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

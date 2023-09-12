@@ -29,12 +29,12 @@
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
-    padding: 12px 0 12px 0;
+    padding: 15px 0 7px 0;
     border-top: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 12px 0 12px 0;
+    padding: 20px 0 12px 0;
     background: none;
   }
 }
