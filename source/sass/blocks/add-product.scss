@@ -9,7 +9,7 @@
 
 .add-product__name {
   margin: 0;
-  padding: 9px 0;
+  padding: 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -39,6 +39,11 @@
   font-size: 14px;
   line-height: 14px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-right: 40px;
     width: 285px;
@@ -53,7 +58,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    gap: 49px;
+    gap: 58px;
   }
 
   @media (min-width: $desktop-width) {

@@ -15,7 +15,7 @@
   padding: 0;
   text-align: center;
   color: #ffffff;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-1.png");
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/jpg/index-background-1.jpg");
   background-repeat: no-repeat;
   background-color: #68b738;
   background-position: center;
@@ -25,7 +25,7 @@
   border: none;
 
   @media (min-resolution: 2dppx) {
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-1@2x.png");
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/jpg/index-background-1@2x.jpg");
     background-size: 320px auto;
   }
 
@@ -66,7 +66,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 40px 0;
+    padding: 40px 0 39px 30px;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
@@ -89,9 +89,13 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 0 0 30px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -125,7 +129,7 @@
 }
 
 .hero__image {
-  margin: -135px 20px 3px 20px;
+  margin: -134px 20px -2px 20px;
 
   @media (min-width: $tablet-width) {
     display: inline;
@@ -137,15 +141,20 @@
 
   @media (min-width: $desktop-width) {
     display: inline-block;
-    margin: 54px 156px 0 0;
+    margin: 61px -7px 0 0;
     text-align: right;
   }
 }
 
 .link-container {
-  margin: -24px auto;
+  margin: 0 auto;
   box-sizing: border-box;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin: -27px auto;
+    width: 244px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: -176px auto;
@@ -154,23 +163,23 @@
 
 .link-container a {
   margin: 0;
-  padding: 8px 44px;
+  padding: 10px 44px;
   color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding: 14px 26px;
     position: relative;
-    bottom: 540px;
-    right: 156px;
+    bottom: 535px;
+    right: 142px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 357px;
-    right: 389px;
+    bottom: 355px;
+    right: 408px;
   }
 }

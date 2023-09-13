@@ -30,11 +30,6 @@
     font-size: 20px;
     line-height: 20px;
   }
-
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 20px;
-  }
 }
 
 .box-info__enter {
@@ -55,6 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 14px 0 13px 19px;
     font-size: 20px;
     line-height: 20px;
   }
