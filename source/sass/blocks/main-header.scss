@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   position: relative;
   border: none;
 
@@ -78,6 +78,14 @@
   }
 }
 
+.main-header__logo-image:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo-image:active {
+  opacity: 0.6;
+}
+
 .main-header__logo-title {
   margin: 0;
   padding: 0;
@@ -93,4 +101,12 @@
     width: 118px;
     height: 21px;
   }
+}
+
+.main-header__logo-title:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo-image:active {
+  opacity: 0.6;
 }

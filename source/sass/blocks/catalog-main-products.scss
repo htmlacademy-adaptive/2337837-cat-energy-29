@@ -19,7 +19,7 @@
 .catalog-main-products__title {
   margin: 0;
   padding: 27px 0 42px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -35,6 +35,24 @@
 
   @media (min-width: $desktop-width) {
     padding: 21px 0 5px;
+  }
+}
+
+.catalog-main-products__cards {
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+    width: 1220px;
   }
 }
 

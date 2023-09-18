@@ -38,21 +38,12 @@
 }
 
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
-  outline: #f12020;
+  border-color: #bababa;
   background-color: #ffffff;
-}
-
-.custom-checkbox:not(:disabled):active + label::before {
-  outline: #faea05;
-  border-color: #1336d1;
 }
 
 .custom-checkbox:focus + label::before {
   outline: 2px solid #444444;
-}
-
-.custom-checkbox:focus:not(:checked) + label::before {
-  border-color: #13d1c1;
 }
 
 .custom-checkbox:checked + label::before {
@@ -60,6 +51,6 @@
 }
 
 .custom-checkbox:disabled + label::before {
-  background-color: #68b738;
+  background-image: url("/img/svg/custom-checkbox-button-active.svg");
   opacity: 0.3;
 }

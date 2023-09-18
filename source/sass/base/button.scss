@@ -2,7 +2,7 @@
 .button {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -20,9 +20,27 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: #cfe6c1;
+  background-color: #5eaa2f;
+}
+
 .button--second {
   color: #444444;
   background-color: #f2f2f2;
+}
+
+.button--second:hover {
+  background-color: #ebebeb;
+}
+
+.button--second:active {
+  color: #444444;
+  background-color: #ebebeb;
 }
 
 .button--second-1 {

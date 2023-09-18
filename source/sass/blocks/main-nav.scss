@@ -82,7 +82,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 478px;
+    width: 480px;
     background: none;
   }
 }
@@ -106,7 +106,7 @@
   }
 }
 
-.main-nav__toggle--view-1 {
+.main-nav__toggle--view {
   @media (min-width: $tablet-width) {
     display: none;
   }

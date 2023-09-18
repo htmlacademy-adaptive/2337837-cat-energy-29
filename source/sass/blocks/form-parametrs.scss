@@ -17,13 +17,14 @@
     width: 628px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 72px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     flex-direction: row;
-    gap: 105px;
+    gap: 0;
   }
 }
 
@@ -40,7 +41,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 1px;
+    width: 570px;
+    gap: 14px;
   }
 }
 
@@ -63,15 +65,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 26px 0 23px 29px;
-    gap: 12px;
-    width: 570px;
+    padding: 30px 27px 20px;
+    gap: 0;
+    width: 516px;
   }
 }
 
 .form-parametrs__contact-title-wrapper {
   display: flex;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
 }
 
 .form-parametrs__contact-title-wrapper::before {
@@ -87,7 +93,7 @@
 
   @media (min-width: $desktop-width) {
     width: calc(50% - 650px);
-    height: 89px;
+    height: 91px;
   }
 }
 
@@ -104,7 +110,7 @@
 
   @media (min-width: $desktop-width) {
     width: calc(50% - 650px);
-    height: 89px;
+    height: 91px;
   }
 }
 
@@ -112,7 +118,7 @@
   margin: 0;
   padding: 26px 0 34px 0;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -127,7 +133,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 65px 0 76px;
+    padding: 70px 0 74px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -137,7 +143,7 @@
   margin: 0 auto;
   padding: 0;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -157,7 +163,7 @@
   margin: 0;
   padding: 21px 0 38px;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -170,7 +176,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 65px 0 78px;
+    padding: 72px 0 78px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -203,7 +209,7 @@
 
   @media (min-width: $desktop-width) {
     width: calc(50% - 650px);
-    height: 88px;
+    height: 94px;
   }
 }
 
@@ -219,7 +225,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 88px;
+    height: 94px;
   }
 }
 
@@ -242,7 +248,7 @@
   width: 263px;
   min-height: 116px;
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -315,7 +321,7 @@
   margin: 0 auto;
   padding: 19px 0 36px;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -387,7 +393,7 @@
   padding: 21px 0 30px;
   color: #000000;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   font-weight: 400;

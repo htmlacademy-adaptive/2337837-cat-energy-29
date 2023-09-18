@@ -16,18 +16,18 @@
   <header class="main-header">
     <div class="main-header-position">
       <div class="main-header__logo-box">
-        <a class="main-header__logo-image" href="#">
+        <a class="main-header__logo-image" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="/img/svg/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="/img/svg/logo-tablet.svg">
             <img class="main-header__logo-image" src="/img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип сайта о правильном питании для котов.">
           </picture>
         </a>
-        <a class="main-header__logo" href="#">
+        <a class="main-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="/img/svg/logo-title-desktop.svg">
-            <source media="(min-width: 768px)" srcset="/img/svg/logo-title.svg">
-            <img class="main-header__logo-title" src="/img/svg/logo-title.svg" width="101" height="18" alt="Сайт о правильном питании для котов.">
+            <source media="(min-width: 768px)" srcset="/img/svg/logo-title-tablet.svg">
+            <img class="main-header__logo-title" src="/img/svg/logo-title-mobile.svg" width="101" height="18" alt="Сайт о правильном питании для котов.">
           </picture>
         </a>
         <span class="visually-hidden">
@@ -43,17 +43,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="../index.html">
+              <a href="./index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="../catalog.html">
+              <a href="./catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item active-3">
-              <a href="#">
+            <li class="site-list__item">
+              <a class="active-second" href="#">
                 Подбор программы
               </a>
             </li>
@@ -89,7 +89,7 @@
             </div>
             <div class="box-info__question">
               <label class="box-info__field">
-                Возраст&nbsp;(Лет):*
+                Возраст&nbsp;(Лет):
                 <input class="box-info__enter" type="text" name="age" id="age" placeholder="Укажите полных лет" value="7" required>
               </label>
             </div>
@@ -125,12 +125,12 @@
         </div>
         <div class="form-parametrs__contact-address box-contact">
           <label class="box-contact__field">
-            E-&nbsp;mail:*
-            <input class="box-contact__enter" type="text" name="e-mail" placeholder="Укажите вашу почту" value="kuklachev@gmail.com" required>
+            E&#x2060-&#x2060mail:*
+            <input class="box-contact__enter-mail" type="text" name="e-mail" placeholder="Укажите вашу почту" value="kuklachev@gmail.com" required>
           </label>
           <label class="box-contact__field">
             Телефон:*
-            <input class="box-contact__enter" type="text" name="phone" placeholder="Укажите ваш телефон" value="8 (960) 900-60-90" required>
+            <input class="box-contact__enter-phone" type="text" name="phone" placeholder="Укажите ваш телефон" value="8 (960) 900-60-90" required>
           </label>
         </div>
         <div class="form-parametrs__comment-wrapper">
@@ -221,49 +221,51 @@
         Мы в социальных сетях.
       </h2>
       <div class="main-footer__social-box">
-        <a class="main-footer__social-box-link">
-          <picture>
-            <source media="(min-width: 768px)" srcset="/img/svg/logo-title-desktop.svg">
-            <img class="main-header__logo-img" src="/img/svg/logo-title.svg" width="128" height="24" alt="Сайт о правильном питании для котов.">
-          </picture>
+        <a class="main-footer__social-box-link" href="index.html">
+          <svg width="128" height="24">
+            <use href="img/sprite.svg#logo-title"></use>
+          </svg>
+          <span class="visually-hidden">
+            Сайт о правильном питании для котов.
+          </span>
         </a>
         <ul class="main-footer__list">
           <li class="main-footer__item">
-            <a class="main-footer__item link-vkontakte" href="https://vk.com/htmlacademy">
+            <a class="main-footer__item-link" href="https://vk.com/htmlacademy">
               <svg width="28" height="22">
                 <use href="img/sprite.svg#vkontakte"></use>
               </svg>
               <span class="visually-hidden">
-                Мы в Вконтакте
+                Мы в Вконтакте.
               </span>
             </a>
           </li>
           <li class="main-footer__item">
-            <a class="main-footer__item link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="main-footer__item-link" href="https://www.youtube.com/user/htmlacademyru">
               <svg width="28" height="22">
                 <use href="img/sprite.svg#youtube"></use>
               </svg>
               <span class="visually-hidden">
-                Мы в Ютубе
+                Мы в Ютубе.
               </span>
             </a>
           </li>
           <li class="main-footer__item">
-            <a class="main-footer__item link-telegram" href="https://t.me/htmlacademy">
+            <a class="main-footer__item-link" href="https://t.me/htmlacademy">
               <svg width="28" height="22">
                 <use href="img/sprite.svg#telegram"></use>
               </svg>
               <span class="visually-hidden">
-                Мы в Телеграме
+                Мы в Телеграме.
               </span>
             </a>
           </li>
         </ul>
         <div class="main-footer__copyright">
-          <a class="main-footer__copyright-link-academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>
-          <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="main-footer__item-link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="34">
               <use href="img/sprite.svg#academy-html"></use>
             </svg>
