@@ -6,14 +6,14 @@
 .catalog-add-products__title {
   margin: 0;
   padding: 25px 0 36px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 0 79px;
+    padding: 70px 0 79px;
     font-size: 36px;
     line-height: 36px;
     border: none;
@@ -42,7 +42,7 @@
 
   @media (min-width: $tablet-width) {
     width: calc(50% - 355px);
-    height: 87px;
+    height: 92px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,7 +60,7 @@
 
   @media (min-width: $tablet-width) {
     width: calc(50% - 384px);
-    height: 87px;
+    height: 92px;
   }
 
   @media (min-width: $desktop-width) {

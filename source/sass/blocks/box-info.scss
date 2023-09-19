@@ -4,7 +4,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
     padding: 0;
   }
 }
@@ -16,7 +15,7 @@
 
 .box-info__field {
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -33,9 +32,9 @@
 }
 
 .box-info__enter {
-  padding: 14px 0 13px 15px;
+  padding: 14px 13px 15px;
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -50,8 +49,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 14px 0 13px 19px;
+    padding: 14px 18px 12px;
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.box-info__enter:hover {
+  border-color: #cdcdcd;
+}
+
+.box-info__enter:focus-visible {
+  border-color: #444444;
+}
+
+.box-info__enter:focus {
+  border-color: #444444;
+}
+
+.box-info__enter:invalid {
+  border-color: #ff8282;
 }

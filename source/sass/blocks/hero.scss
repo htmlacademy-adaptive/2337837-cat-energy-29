@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
 
   @media (min-width: $desktop-width) {
@@ -10,7 +10,7 @@
   }
 }
 
-.hero-welcome {
+.hero__welcome {
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -42,7 +42,7 @@
   }
 }
 
-.hero-welcome-box {
+.hero__welcome__box {
   margin: 0 auto;
   background-color: #64a83c;
 
