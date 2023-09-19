@@ -6,6 +6,8 @@
   <title>
     Питание для котов «Cat Energy»
   </title>
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -61,8 +63,8 @@
   </header>
   <main class="main-container">
     <section class="hero">
-      <div class="hero-welcome-box">
-        <div class="hero-welcome">
+      <div class="hero__welcome-box">
+        <div class="hero__welcome">
           <h1 class="hero__title">
             Функциональное питание&nbsp;для&nbsp;котов
           </h1>
@@ -91,7 +93,7 @@
       <h2 class="visually-hidden">
         Подбор индивидуальной программы для вашего питомца.
       </h2>
-      <div class="programm-variation">
+      <div class="programm__variation">
         <ul class="programm__list">
           <li class="programm__item programm__item--minus">
             <h3 class="programm__title">
@@ -123,7 +125,7 @@
       </div>
     </section>
     <section class="action">
-      <div class="action-wrapper">
+      <div class="action__wrapper">
         <h2 class="action__title">
           Как это работает
         </h2>
@@ -224,14 +226,10 @@
           </div>
         </div>
         <div class="promo__slider">
-          <a class="promo-image" href="#">
-            <svg width="40" height="256">
-              <use href="img/sprite.svg#index-icon-slider-mobile"></use>
-            </svg>
-            <span class="visually-hidden">
-              Слайдер.
-            </span>
-          </a>
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/promo-slider-tablet.png 1x, /img/promo-slider-tablet@2x.png 2x">
+            <img class="promo__image" src="/img/promo-slider-mobile.png" srcset="/img/promo-slider-mobile@2x.png 2x" width="280" height="256" alt="Слайдер с результатом.">
+          </picture>
         </div>
       </div>
     </section>

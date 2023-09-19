@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 14px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     gap: 15px;
@@ -26,6 +27,7 @@
   display: flex;
   gap: 13px;
   align-items: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -40,8 +42,7 @@
   }
 }
 
-.box-contact__enter-mail {
-  position: relative;
+.box-contact__enter {
   padding: 14px 13px 15px;
   color: #444444;
   font-family: "Oswald", "Arial", sans-serif;
@@ -52,49 +53,6 @@
   text-transform: uppercase;
   width: 100%;
   border: 1px solid #e7e7e7;
-  background-image: url("../img/svg/form-mail-icon.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 18px 14px;
-
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 12px 38px 8px 15px;
-    font-size: 20px;
-  }
-}
-
-.box-contact__enter-mail::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 14px;
-  background: url("../img/svg/form-mail-icon.svg") no-repeat center center;
-  background-size: contain;
-}
-
-.box-contact__enter-phone {
-  padding: 14px 13px 15px;
-  color: #444444;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  width: 100%;
-  border: 1px solid #e7e7e7;
-  background-image: url("/source/img/svg/form-phone-icon.svg");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

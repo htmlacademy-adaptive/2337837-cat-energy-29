@@ -6,6 +6,8 @@
   <title>
     Питание для котов «Cat Energy»
   </title>
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -71,7 +73,7 @@
         Заполните анкету, и мы подберем<br>программу питания для вашего кота
       </p>
     </div>
-    <div class="form-container__wrapper form-parametrs">
+    <section class="form-container__wrapper form-parametrs">
       <form class="form-parametrs__container" action="https://echo.htmlacademy.ru/" method="post">
         <div class="form-parametrs__box">
           <div class="form-parametrs__box-info box-info">
@@ -126,11 +128,11 @@
         <div class="form-parametrs__contact-address box-contact">
           <label class="box-contact__field">
             E&#x2060-&#x2060mail:*
-            <input class="box-contact__enter-mail" type="text" name="e-mail" placeholder="Укажите вашу почту" value="kuklachev@gmail.com" required>
+              <input class="box-contact__enter" type="text" name="e-mail" placeholder="Укажите вашу почту" value="kuklachev@gmail.com" required>
           </label>
           <label class="box-contact__field">
             Телефон:*
-            <input class="box-contact__enter-phone" type="text" name="phone" placeholder="Укажите ваш телефон" value="8 (960) 900-60-90" required>
+              <input class="box-contact__enter" type="text" name="phone" placeholder="Укажите ваш телефон" value="8 (960) 900-60-90" required>
           </label>
         </div>
         <div class="form-parametrs__comment-wrapper">
@@ -181,7 +183,7 @@
           </p>
         </div>
       </form>
-    </div>
+    </section>
   </main>
   <footer class="main-footer">
     <section class="main-footer__contacts main-footer__contacts--second">

@@ -71,7 +71,7 @@
 
 .site-list__item--theme a.active-first {
   @media (min-width: $tablet-width) {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 2px solid #68b738;
   }
 
@@ -83,7 +83,7 @@
 
 .site-list__item a.active-second {
   @media (min-width: $tablet-width) {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 2px solid #68b738;
   }
 }
