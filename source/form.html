@@ -36,7 +36,7 @@
           Кнопка меню.
         </span>
       </div>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle " type="button">
           <span class="visually-hidden">
             Открыть-закрыть меню.
@@ -126,14 +126,24 @@
           </h2>
         </div>
         <div class="form-parametrs__contact-address box-contact">
-          <label class="box-contact__field">
-            E&#8209;mail:*
+          <div class="box-contact__area">
+            <label class="box-contact__field">
+              E&#8209;mail:*
               <input class="box-contact__enter" type="text" name="e-mail" placeholder="Укажите вашу почту" value="kuklachev@gmail.com" required>
-          </label>
-          <label class="box-contact__field">
-            Телефон:*
+              <svg class="box-contact__icon" width="20" height="20">
+                <use href="img/sprite.svg#icon-email"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="box-contact__area">
+            <label class="box-contact__field">
+              Телефон:*
               <input class="box-contact__enter" type="text" name="phone" placeholder="Укажите ваш телефон" value="8 (960) 900-60-90" required>
-          </label>
+              <svg class="box-contact__icon" width="20" height="20">
+                <use href="img/sprite.svg#icon-phone"></use>
+              </svg>
+            </label>
+          </div>
         </div>
         <div class="form-parametrs__comment-wrapper">
           <h2 class="form-parametrs__comment">

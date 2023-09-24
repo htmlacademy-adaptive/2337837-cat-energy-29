@@ -3,20 +3,19 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    background: linear-gradient(to bottom, #ffffff 57%, #f2f2f2 0%);
+    background: linear-gradient(to bottom, #ffffff 57%, #eaeaea 0%);
     position: relative;
-    border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to bottom, #ffffff 31%, #f2f2f2 0%);
+    background: linear-gradient(to bottom, #ffffff 25%, #f2f2f2 0%);
     border-top: none;
   }
 }
 
 .promo-container {
   margin: 0 auto;
-  padding: 25px 0 35px;
+  padding: 25px 0 39px;
   width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -48,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 69px 0 76px;
+    padding: 20px 0 76px;
     background-color: #ffffff;
   }
 }
@@ -208,63 +207,56 @@
 
 .promo__slider {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   width: 280px;
   height: 256px;
-  background-image: url("/img/promo-slider-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    top: -51px;
+    top: 0;
     width: 560px;
-    height: 512px;
-    background-image: url("/img/promo-slider-tablet.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 613px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: right;
     position: absolute;
-    top: 70px;
+    top: 18px;
     right: 0;
-    background-image: url("/img/promo-slider-tablet.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  }
+}
+
+.promo-foto {
+  margin: 0;
+  width: 280px;
+  height: 256px;
+  position: absolute;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
   }
 }
 
 .promo__link {
-  @media (min-width: $desktop-width) {
-    position: relative;
-    margin: 0;
-    top: 0;
-    right: 260px;
+  margin: 0;
+  width: 40px;
+  height: 256px;
+  position: absolute;
+  left: 60px;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+    left: 130px;
   }
 }
 
 .promo__link:hover {
-  opacity: 0.4;
-}
-
-.promo__link:active {
   opacity: 0.2;
 }
 
-.promo__image {
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    width: 560px;
-    height: 512px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    top: 0;
-    right: 10px;
-  }
+.promo__link:active {
+  opacity: 0.6;
 }
