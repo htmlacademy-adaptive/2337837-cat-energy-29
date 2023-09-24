@@ -5,6 +5,7 @@ html {
 .page-body {
   margin: 0 auto;
   min-width: 320px;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;

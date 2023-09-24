@@ -37,12 +37,11 @@
 
 .main-header__logo-box {
   margin: 0 auto;
-  padding: 13px 20px 7px 20px;
+  padding: 13px 20px 9px;
   position: relative;
   display: flex;
   justify-content: flex-start;
   gap: 56px;
-  align-items: center;
   width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -60,7 +59,15 @@
 
 .main-header__logo {
   margin: 0;
-  padding: 0 0 5px;
+  padding: 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 0 0;
+  }
 }
 
 .main-header__logo-image {
@@ -105,8 +112,4 @@
 
 .main-header__logo-title:hover {
   opacity: 0.8;
-}
-
-.main-header__logo-image:active {
-  opacity: 0.6;
 }

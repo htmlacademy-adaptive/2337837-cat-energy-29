@@ -42,6 +42,15 @@
   }
 }
 
+.box-contact__area {
+  flex-basis: 40%;
+}
+
+.box-contact__icon {
+  position: absolute;
+  right: 16px;
+}
+
 .box-contact__enter {
   padding: 14px 13px 15px;
   color: #444444;
@@ -53,6 +62,7 @@
   text-transform: uppercase;
   width: 100%;
   border: 1px solid #e7e7e7;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -63,4 +73,24 @@
     padding: 12px 38px 8px 15px;
     font-size: 20px;
   }
+}
+
+.box-contact__enter:hover {
+  border-color: #cdcdcd;
+}
+
+.box-contact__enter:focus {
+  border-color: #444444;
+}
+
+.box-contact__enter:focus + .box-contact__icon {
+  color: #68b738;
+}
+
+.box-contact__enter:invalid {
+  border-color: #ff8282;
+}
+
+.box-contact__enter:invalid + .box-contact__icon {
+  color: #ff8282;
 }

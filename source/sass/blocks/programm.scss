@@ -1,13 +1,14 @@
 .programm {
   margin: 0;
-  background-color: #ffffff;
+  //background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 0 0;
+    margin: 0;
+    padding: 84px 0 0;
   }
 }
 
@@ -21,7 +22,6 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    display: flex;
   }
 }
 
@@ -29,16 +29,17 @@
   margin: 0;
   padding: 20px 0 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 24px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0;
     gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
     flex-direction: row;
     justify-content: space-between;
     gap: 80px;

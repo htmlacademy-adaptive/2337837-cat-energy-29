@@ -8,85 +8,6 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/svg/nav-toggle-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ffffff;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.main-nav--closed {
-  @media (min-width: mobile-width-only) {
-    display: none;
-  }
-}
-
-.main-nav--opened .main-nav__wrapper {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.main-nav--opened .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/svg/nav-toggle-open.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ffffff;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.main-nav__wrapper {
-  margin: 0 auto;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  background-color: #ffffff;
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    width: 437px;
-    z-index: 2;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 480px;
-    background: none;
-  }
-}
-
 .main-nav__toggle {
   padding: 0;
   position: relative;
@@ -112,22 +33,133 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
+    margin: -33px auto;
     padding: 0;
     display: block;
     position: absolute;
-    top: -55px;
-    right: -907px;
+    bottom: 0;
+    right: -909px;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/jpg/index-background-desktop-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #64a83c;
     min-width: 1040px;
     min-height: 694px;
     border: none;
+  }
 
-    @media (min-resolution: 2dppx) {
-      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/jpg/index-background-desktop-1@2x.jpg");
-      background-size: 1040px auto;
-    }
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/jpg/index-background-desktop-1@2x.jpg");
+    background-size: 1040px auto;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/svg/nav-toggle-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/svg/nav-toggle-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.main-nav--opened .main-nav__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+    width: 437px;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 480px;
+    background: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle::before {
+  background-image: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  display: block;
+  position: static;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.main-nav__wrapper {
+
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 437px;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    background: none;
   }
 }
