@@ -1,6 +1,5 @@
 .programm {
   margin: 0;
-  //background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -65,7 +64,7 @@
 .programm__item--minus {
   margin: 0;
   position: relative;
-  background-image: url("/img/svg/program-logo-cat-1.svg");
+  background-image: url("../img/svg/program-logo-cat-1.svg");
   background-position: 20px 20px;
   background-repeat: no-repeat;
   background-size: 50px;
@@ -73,7 +72,7 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     position: relative;
-    background-image: url("/img/svg/program-logo-cat-1.svg");
+    background-image: url("../img/svg/program-logo-cat-1.svg");
     background-position: 445px 81px;
     background-repeat: no-repeat;
     background-size: 200px;
@@ -88,7 +87,7 @@
 .programm__item--plus {
   margin: 0;
   position: relative;
-  background-image: url("/img/svg/program-logo-cat-2.svg");
+  background-image: url("../img/svg/program-logo-cat-2.svg");
   background-position: 13px 24px;
   background-repeat: no-repeat;
   background-size: 67px;
@@ -96,7 +95,7 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     position: relative;
-    background-image: url("/img/svg/program-logo-cat-2.svg");
+    background-image: url("../img/svg/program-logo-cat-2.svg");
     background-position: 411px 91px;
     background-repeat: no-repeat;
     background-size: 268px;
@@ -183,7 +182,7 @@
   align-items: center;
   gap: 13px;
   width: 134px;
-  background-image: url("/img/svg/index-icon-arrow.svg");
+  background-image: url("../img/svg/index-icon-arrow.svg");
   background-position: right;
   background-repeat: no-repeat;
 
@@ -199,11 +198,11 @@
 }
 
 .programm__link-box:hover {
-  background-image: url("/img/svg/index-icon-arrow-hover.svg");
+  background-image: url("../img/svg/index-icon-arrow-hover.svg");
 }
 
 .programm__link-box:active {
-  background-image: url("/img/svg/index-icon-arrow-hover.svg");
+  background-image: url("../img/svg/index-icon-arrow-hover.svg");
   opacity: 0.3;
 }
 
@@ -217,12 +216,14 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+  width: 134px;
 
 
   @media (min-width: $tablet-width) {
     margin: 0;
     font-size: 20px;
     line-height: 20px;
+    width: 168px;
   }
 
   @media (min-width: $desktop-width) {
