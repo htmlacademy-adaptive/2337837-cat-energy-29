@@ -47,10 +47,10 @@
 }
 
 .custom-checkbox:checked + label::before {
-  background-image: url("/img/svg/custom-checkbox-button-active.svg");
+  background-image: url("../img/svg/custom-checkbox-button-active.svg");
 }
 
 .custom-checkbox:disabled + label::before {
-  background-image: url("/img/svg/custom-checkbox-button-active.svg");
+  background-image: url("../img/svg/custom-checkbox-button-active.svg");
   opacity: 0.3;
 }
